@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		04CC03822519719400431213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03812519719400431213 /* AppDelegate.swift */; };
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
-		04CC03862519719400431213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* ViewController.swift */; };
+		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
 		04CC03892519719400431213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03872519719400431213 /* Main.storyboard */; };
 		04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */; };
 		04CC038E2519719600431213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CC038D2519719600431213 /* Assets.xcassets */; };
 		04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC038F2519719600431213 /* LaunchScreen.storyboard */; };
 		04CC039C2519719600431213 /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC039B2519719600431213 /* MarvelAppTests.swift */; };
 		04CC03A72519719600431213 /* MarvelAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03A62519719600431213 /* MarvelAppUITests.swift */; };
+		04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03BA251981DD00431213 /* BaseViewController.swift */; };
+		04CC03C52519838800431213 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03C42519838800431213 /* RegisterVC.swift */; };
+		04CC03CD251983B300431213 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03CC251983B300431213 /* Register.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		04CC037E2519719400431213 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC03812519719400431213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04CC03852519719400431213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04CC03852519719400431213 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		04CC03882519719400431213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CC038B2519719400431213 /* MarvelApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarvelApp.xcdatamodel; sourceTree = "<group>"; };
 		04CC038D2519719600431213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		04CC03A22519719600431213 /* MarvelAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC03A62519719600431213 /* MarvelAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppUITests.swift; sourceTree = "<group>"; };
 		04CC03A82519719600431213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CC03BA251981DD00431213 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04CC03C42519838800431213 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		04CC03CC251983B300431213 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 		04CC03802519719400431213 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
-				04CC03812519719400431213 /* AppDelegate.swift */,
-				04CC03832519719400431213 /* SceneDelegate.swift */,
-				04CC03852519719400431213 /* ViewController.swift */,
+				04CC03D12519844600431213 /* Forgot The Password */,
+				04CC03C32519835B00431213 /* Register */,
+				04CC03C22519832300431213 /* Login */,
 				04CC03872519719400431213 /* Main.storyboard */,
 				04CC038D2519719600431213 /* Assets.xcassets */,
+				04CC03BA251981DD00431213 /* BaseViewController.swift */,
+				04CC03812519719400431213 /* AppDelegate.swift */,
+				04CC03832519719400431213 /* SceneDelegate.swift */,
 				04CC038F2519719600431213 /* LaunchScreen.storyboard */,
 				04CC03922519719600431213 /* Info.plist */,
 				04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */,
@@ -129,6 +138,30 @@
 				04CC03A82519719600431213 /* Info.plist */,
 			);
 			path = MarvelAppUITests;
+			sourceTree = "<group>";
+		};
+		04CC03C22519832300431213 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03852519719400431213 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04CC03C32519835B00431213 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03C42519838800431213 /* RegisterVC.swift */,
+				04CC03CC251983B300431213 /* Register.storyboard */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		04CC03D12519844600431213 /* Forgot The Password */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Forgot The Password";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +270,7 @@
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
 				04CC038E2519719600431213 /* Assets.xcassets in Resources */,
 				04CC03892519719400431213 /* Main.storyboard in Resources */,
+				04CC03CD251983B300431213 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CC03862519719400431213 /* ViewController.swift in Sources */,
+				04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */,
+				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
+				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 			);
