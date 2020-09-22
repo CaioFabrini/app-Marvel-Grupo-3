@@ -19,6 +19,12 @@
 		04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03BA251981DD00431213 /* BaseViewController.swift */; };
 		04CC03C52519838800431213 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03C42519838800431213 /* RegisterVC.swift */; };
 		04CC03CD251983B300431213 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03CC251983B300431213 /* Register.storyboard */; };
+		04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03DD251A1E3A00431213 /* HomeTabBar.storyboard */; };
+		04CC03EA251A1F3500431213 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03E9251A1F3500431213 /* Home.storyboard */; };
+		04CC03EF251A1F6100431213 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03EE251A1F6100431213 /* Search.storyboard */; };
+		04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03F3251A1FA100431213 /* Profile.storyboard */; };
+		04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03F9251A238200431213 /* ForgotPassword.storyboard */; };
+		04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03FF251A23F100431213 /* ConfigProfile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		04CC03BA251981DD00431213 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04CC03C42519838800431213 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		04CC03CC251983B300431213 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		04CC03DD251A1E3A00431213 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
+		04CC03E9251A1F3500431213 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		04CC03EE251A1F6100431213 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		04CC03F3251A1FA100431213 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		04CC03F9251A238200431213 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		04CC03FF251A23F100431213 /* ConfigProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigProfile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +119,15 @@
 		04CC03802519719400431213 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				04CC03E8251A1F2200431213 /* Home */,
+				04CC03DC251A1DF900431213 /* Search */,
+				04CC03DB251A1DC200431213 /* Profile */,
+				04CC03D5251A186700431213 /* Detail */,
 				04CC03D12519844600431213 /* Forgot The Password */,
 				04CC03C32519835B00431213 /* Register */,
 				04CC03C22519832300431213 /* Login */,
 				04CC03872519719400431213 /* Main.storyboard */,
+				04CC03DD251A1E3A00431213 /* HomeTabBar.storyboard */,
 				04CC038D2519719600431213 /* Assets.xcassets */,
 				04CC03BA251981DD00431213 /* BaseViewController.swift */,
 				04CC03812519719400431213 /* AppDelegate.swift */,
@@ -160,8 +177,65 @@
 		04CC03D12519844600431213 /* Forgot The Password */ = {
 			isa = PBXGroup;
 			children = (
+				04CC03F9251A238200431213 /* ForgotPassword.storyboard */,
 			);
 			path = "Forgot The Password";
+			sourceTree = "<group>";
+		};
+		04CC03D5251A186700431213 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03D7251A18A400431213 /* Character Detail */,
+				04CC03D6251A187100431213 /* Comics Detail */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		04CC03D6251A187100431213 /* Comics Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Comics Detail";
+			sourceTree = "<group>";
+		};
+		04CC03D7251A18A400431213 /* Character Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Character Detail";
+			sourceTree = "<group>";
+		};
+		04CC03DB251A1DC200431213 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03FE251A23D300431213 /* Config Profile */,
+				04CC03F3251A1FA100431213 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		04CC03DC251A1DF900431213 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03EE251A1F6100431213 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		04CC03E8251A1F2200431213 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03E9251A1F3500431213 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04CC03FE251A23D300431213 /* Config Profile */ = {
+			isa = PBXGroup;
+			children = (
+				04CC03FF251A23F100431213 /* ConfigProfile.storyboard */,
+			);
+			path = "Config Profile";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +342,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
+				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
+				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
+				04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */,
 				04CC038E2519719600431213 /* Assets.xcassets in Resources */,
+				04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */,
+				04CC03EA251A1F3500431213 /* Home.storyboard in Resources */,
+				04CC03EF251A1F6100431213 /* Search.storyboard in Resources */,
 				04CC03892519719400431213 /* Main.storyboard in Resources */,
 				04CC03CD251983B300431213 /* Register.storyboard in Resources */,
 			);
