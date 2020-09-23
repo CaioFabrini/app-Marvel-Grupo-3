@@ -25,6 +25,8 @@
 		04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03F3251A1FA100431213 /* Profile.storyboard */; };
 		04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03F9251A238200431213 /* ForgotPassword.storyboard */; };
 		04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03FF251A23F100431213 /* ConfigProfile.storyboard */; };
+		04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040A251AD1F800431213 /* CharacterDetail.storyboard */; };
+		04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040F251AD20F00431213 /* ComicsDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		04CC03F3251A1FA100431213 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		04CC03F9251A238200431213 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		04CC03FF251A23F100431213 /* ConfigProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigProfile.storyboard; sourceTree = "<group>"; };
+		04CC040A251AD1F800431213 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
+		04CC040F251AD20F00431213 /* ComicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComicsDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,7 @@
 		04CC03D6251A187100431213 /* Comics Detail */ = {
 			isa = PBXGroup;
 			children = (
+				04CC040F251AD20F00431213 /* ComicsDetail.storyboard */,
 			);
 			path = "Comics Detail";
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 		04CC03D7251A18A400431213 /* Character Detail */ = {
 			isa = PBXGroup;
 			children = (
+				04CC040A251AD1F800431213 /* CharacterDetail.storyboard */,
 			);
 			path = "Character Detail";
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
 				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
 				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
+				04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */,
 				04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */,
 				04CC038E2519719600431213 /* Assets.xcassets in Resources */,
+				04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */,
 				04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */,
 				04CC03EA251A1F3500431213 /* Home.storyboard in Resources */,
 				04CC03EF251A1F6100431213 /* Search.storyboard in Resources */,
