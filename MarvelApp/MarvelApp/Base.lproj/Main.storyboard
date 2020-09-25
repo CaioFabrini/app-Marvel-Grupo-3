@@ -32,7 +32,7 @@
                                     <color key="titleColor" red="0.98823529409999999" green="0.98015481230000001" blue="0.97499239439999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kQc-Do-es9" kind="show" id="QKK-Q7-k7g"/>
+                                    <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2f0-z1-dXB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-Po-Sv0">
@@ -42,7 +42,7 @@
                                     <color key="titleColor" red="0.98823529409999999" green="0.98015481230000001" blue="0.97499239439999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sjP-wf-DRQ" kind="show" id="hQb-CW-lT7"/>
+                                    <action selector="tappedSignUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgn-i0-CFp"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-kP-gJM">
@@ -82,7 +82,7 @@
                                     <color key="titleColor" red="0.98823529409999999" green="0.98015481230000001" blue="0.97499239439999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pXZ-gF-zic" kind="show" id="8lh-CB-keG"/>
+                                    <action selector="tappedForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryD-cA-XUd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,6 +110,14 @@
                             <constraint firstItem="hvd-A2-DDW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-59" id="v3j-j3-Xoa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="forgotPasswordButton" destination="UEZ-mb-xnU" id="FhK-vF-KNg"/>
+                        <outlet property="loginButton" destination="nna-Xs-glo" id="RtW-bw-mIW"/>
+                        <outlet property="signUpButton" destination="z8L-Po-Sv0" id="aEA-UM-gUy"/>
+                        <segue destination="kQc-Do-es9" kind="show" identifier="homeTabBar" id="Xjg-a6-32D"/>
+                        <segue destination="pXZ-gF-zic" kind="show" identifier="ForgotPassword" id="HMm-k3-MAm"/>
+                        <segue destination="sjP-wf-DRQ" kind="show" identifier="SignUp" id="D4V-hl-rfx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
