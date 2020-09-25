@@ -25,8 +25,11 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nna-Xs-glo">
-                                <rect key="frame" x="65" y="700" width="284" height="36"/>
+                                <rect key="frame" x="65" y="671" width="284" height="65"/>
                                 <color key="backgroundColor" red="0.01176470588" green="0.074509803920000006" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="hiT-8p-zdO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.98823529409999999" green="0.98015481230000001" blue="0.97499239439999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +49,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-kP-gJM">
-                                <rect key="frame" x="65" y="455" width="284" height="151"/>
+                                <rect key="frame" x="65" y="426" width="284" height="151"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TM7-vb-DZM">
                                         <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
@@ -76,7 +79,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEZ-mb-xnU">
-                                <rect key="frame" x="65" y="626" width="284" height="31"/>
+                                <rect key="frame" x="65" y="597" width="284" height="31"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <state key="normal" title="Forgot your password?">
                                     <color key="titleColor" red="0.98823529409999999" green="0.98015481230000001" blue="0.97499239439999996" alpha="1" colorSpace="calibratedRGB"/>

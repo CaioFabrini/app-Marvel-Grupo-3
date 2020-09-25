@@ -21,7 +21,9 @@ class LoginVC: BaseViewController {
     }
 
     func configScreen(){
-        self.loginButton.layer.cornerRadius = 10
+        self.loginButton.layer.cornerRadius = 30
+        self.loginButton.layer.borderWidth = 3
+        self.loginButton.layer.borderColor = UIColor.white.cgColor
     }
    
     @IBAction func tappedLoginButton(_ sender: UIButton) {
