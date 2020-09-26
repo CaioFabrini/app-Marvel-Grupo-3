@@ -85,7 +85,7 @@
                                     <color key="titleColor" red="0.98823529409999999" green="0.98015481230000001" blue="0.97499239439999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryD-cA-XUd"/>
+                                    <action selector="tappedForgotPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgm-g4-nah"/>
                                 </connections>
                             </button>
                         </subviews>

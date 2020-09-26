@@ -33,7 +33,7 @@ class LoginVC: BaseViewController {
     @IBAction func tappedSignUpButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "SignUp", sender: nil)
     }
-    @IBAction func tappedForgotPassword(_ sender: UIButton) {
+    @IBAction func tappedForgotPasswordButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "ForgotPassword", sender: nil)
     }
 }
