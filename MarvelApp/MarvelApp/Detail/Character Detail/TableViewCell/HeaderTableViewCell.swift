@@ -32,9 +32,9 @@ class HeaderTableViewCell: UITableViewCell {
     func configScreen(){
         
         self.subView.clipsToBounds = true
-        self.subView.backgroundColor = .clear
-        self.subView.addShadow(shadowColor: .clear, offSet: CGSize(width: 2.6, height: 2.6), opacity: 0.0, shadowRadius: 5.0, cornerRadius: 50.0, corners:[.topLeft], fillColor: .white)
-       
+        self.subView.backgroundColor = .white
+       self.subView.roundCorners([.topLeft], radius: 55)
+        
     }
    
     
@@ -50,18 +50,10 @@ class HeaderTableViewCell: UITableViewCell {
 
 extension UIView {
     
-    func addShadow(shadowColor: UIColor, offSet: CGSize, opacity: Float, shadowRadius: CGFloat, cornerRadius: CGFloat, corners: UIRectCorner, fillColor: UIColor = .white) {
-        
-        let shadowLayer = CAShapeLayer()
-        let size = CGSize(width: cornerRadius, height: cornerRadius)
-        let cgPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: size).cgPath //1
-        shadowLayer.path = cgPath //2
-        shadowLayer.fillColor = fillColor.cgColor //3
-        shadowLayer.shadowColor = shadowColor.cgColor //4
-        shadowLayer.shadowPath = cgPath
-        shadowLayer.shadowOffset = offSet //5
-        shadowLayer.shadowOpacity = opacity
-        shadowLayer.shadowRadius = shadowRadius
-        self.layer.addSublayer(shadowLayer)
-    }
+        func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+             let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+             let mask = CAShapeLayer()
+             mask.path = path.cgPath
+             self.layer.mask = mask
+        }
 }
