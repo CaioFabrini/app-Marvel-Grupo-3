@@ -72,7 +72,10 @@ extension HeaderTableViewCell:UICollectionViewDataSource,UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+ 
+      
+        
+        
     }
     
     
