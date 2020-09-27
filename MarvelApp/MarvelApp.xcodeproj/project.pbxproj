@@ -28,6 +28,8 @@
 		04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040A251AD1F800431213 /* CharacterDetail.storyboard */; };
 		04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040F251AD20F00431213 /* ComicsDetail.storyboard */; };
 		04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906A02520D716006D28C7 /* CharacterDetailVC.swift */; };
+		04D906A82520E1E6006D28C7 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906A62520E1E6006D28C7 /* HeaderTableViewCell.swift */; };
+		04D906A92520E1E6006D28C7 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906A72520E1E6006D28C7 /* HeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		04CC040A251AD1F800431213 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		04CC040F251AD20F00431213 /* ComicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComicsDetail.storyboard; sourceTree = "<group>"; };
 		04D906A02520D716006D28C7 /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVC.swift; sourceTree = "<group>"; };
+		04D906A62520E1E6006D28C7 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		04D906A72520E1E6006D28C7 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 		04CC03D7251A18A400431213 /* Character Detail */ = {
 			isa = PBXGroup;
 			children = (
+				04D906A52520E170006D28C7 /* TableViewCell */,
 				04CC040A251AD1F800431213 /* CharacterDetail.storyboard */,
 				04D906A02520D716006D28C7 /* CharacterDetailVC.swift */,
 			);
@@ -245,6 +250,15 @@
 				04CC03FF251A23F100431213 /* ConfigProfile.storyboard */,
 			);
 			path = "Config Profile";
+			sourceTree = "<group>";
+		};
+		04D906A52520E170006D28C7 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				04D906A62520E1E6006D28C7 /* HeaderTableViewCell.swift */,
+				04D906A72520E1E6006D28C7 /* HeaderTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +373,7 @@
 				04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */,
 				04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */,
 				04CC03EA251A1F3500431213 /* Home.storyboard in Resources */,
+				04D906A92520E1E6006D28C7 /* HeaderTableViewCell.xib in Resources */,
 				04CC03EF251A1F6100431213 /* Search.storyboard in Resources */,
 				04CC03892519719400431213 /* Main.storyboard in Resources */,
 				04CC03CD251983B300431213 /* Register.storyboard in Resources */,
@@ -386,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D906A82520E1E6006D28C7 /* HeaderTableViewCell.swift in Sources */,
 				04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */,
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
