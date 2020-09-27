@@ -33,18 +33,47 @@ class CharacterDetailVC:BaseViewController{
 
 extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier, for: indexPath) as! HeaderTableViewCell
-            
+        
             return cell
         }
         
         
         return UITableViewCell()
+    }
+}
+
+
+
+class Model{
+    var name:String?
+    var image:UIImage?
+    var detail:String?
+    var isSelectedFavorite:Bool?
+    var subName:String?
+    var imageSelect:UIImage?
+    var biografia:String?
+    var height:String?
+    var weight:String?
+    var gender:String?
+    var eyes:String?
+    var hair:String?
+    var universe:String?
+    var otherAliases:String?
+    var education:String?
+    var placeOfOrigin:String?
+    var identity:String?
+    var knownRelatives:String?
+    var powers:String?
+    var groupAffiliation:String?
+    
+    init(image:UIImage?){
+        self.image = image
     }
 }
