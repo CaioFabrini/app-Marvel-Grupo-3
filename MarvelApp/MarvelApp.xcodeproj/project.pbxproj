@@ -27,6 +27,7 @@
 		04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03FF251A23F100431213 /* ConfigProfile.storyboard */; };
 		04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040A251AD1F800431213 /* CharacterDetail.storyboard */; };
 		04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040F251AD20F00431213 /* ComicsDetail.storyboard */; };
+		04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906A02520D716006D28C7 /* CharacterDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		04CC03FF251A23F100431213 /* ConfigProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigProfile.storyboard; sourceTree = "<group>"; };
 		04CC040A251AD1F800431213 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		04CC040F251AD20F00431213 /* ComicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComicsDetail.storyboard; sourceTree = "<group>"; };
+		04D906A02520D716006D28C7 /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				04CC040A251AD1F800431213 /* CharacterDetail.storyboard */,
+				04D906A02520D716006D28C7 /* CharacterDetailVC.swift */,
 			);
 			path = "Character Detail";
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
+				04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */,
 				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 			);
