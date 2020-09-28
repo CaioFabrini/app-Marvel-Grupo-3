@@ -11,8 +11,19 @@ import UIKit
 class DetailExpationImg:BaseViewController{
     
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var tappedBackButton: UIButton!
     
-
+    @IBOutlet weak var image: UIImageView!
+    var model:Model?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+       // self.image.image = model?.image
+    }
+    
+    @IBAction func tappedBackButton(_ sender: UIButton) {
+        print("tapped")
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

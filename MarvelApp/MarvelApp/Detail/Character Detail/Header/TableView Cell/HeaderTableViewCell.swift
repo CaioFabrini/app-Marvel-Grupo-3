@@ -6,7 +6,13 @@
 //
 
 
+import Foundation
 import UIKit
+
+protocol SelectedCollectionHeaderTableViewCell: class{
+    func imageSelected(index:Int)
+}
+
 
 class HeaderTableViewCell: UITableViewCell{
     
@@ -21,6 +27,11 @@ class HeaderTableViewCell: UITableViewCell{
     @IBOutlet weak var collectionController: UICollectionView!
     
     
+    weak var delegate:SelectedCollectionHeaderTableViewCell?
+    
+    func delegate(delegate:SelectedCollectionHeaderTableViewCell){
+        self.delegate = delegate
+    }
     
     
     static let identifier = "HeaderTableViewCell"
@@ -44,6 +55,7 @@ class HeaderTableViewCell: UITableViewCell{
         self.subView.clipsToBounds = true
         self.subView.backgroundColor = .white
         self.subView.roundCorners([.topLeft], radius: 55)
+        
     }
     
     
@@ -51,18 +63,12 @@ class HeaderTableViewCell: UITableViewCell{
         print("tappedFavoriteButton")
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        
-    }
-    
 }
 
 
 extension HeaderTableViewCell:UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -72,10 +78,8 @@ extension HeaderTableViewCell:UICollectionViewDataSource,UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
- 
-      
-        
-        
+        print(indexPath.row)
+        self.delegate?.imageSelected(index:indexPath.row)
     }
     
     

@@ -14,7 +14,6 @@ class CharacterDetailVC:BaseViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.configTableView()
         
     }
@@ -30,6 +29,13 @@ class CharacterDetailVC:BaseViewController{
     
 }
 
+extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
+    func imageSelected(index: Int) {
+        print(index)
+       self.performSegue(withIdentifier: "detailVC", sender: nil)
+    }
+}
+
 
 extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,12 +46,13 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
         
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier, for: indexPath) as! HeaderTableViewCell
+            cell.delegate(delegate: self)
         
             return cell
         }
         
         
-        return UITableViewCell()
+    return UITableViewCell()
     }
 }
 

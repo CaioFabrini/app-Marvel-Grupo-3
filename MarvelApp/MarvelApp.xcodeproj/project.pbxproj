@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0423F3B22521935B0083B826 /* DetailExpationImg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */; };
 		04CC03822519719400431213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03812519719400431213 /* AppDelegate.swift */; };
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
 		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
@@ -34,7 +35,6 @@
 		04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */; };
 		04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */; };
 		04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906DD25212149006D28C7 /* DetailExpationImg.swift */; };
-		04D906E325212177006D28C7 /* DetailExpationImg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D906E225212177006D28C7 /* DetailExpationImg.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailExpationImg.storyboard; sourceTree = "<group>"; };
 		04CC037E2519719400431213 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC03812519719400431213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D906DD25212149006D28C7 /* DetailExpationImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpationImg.swift; sourceTree = "<group>"; };
-		04D906E225212177006D28C7 /* DetailExpationImg.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailExpationImg.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +227,7 @@
 				04CC040A251AD1F800431213 /* CharacterDetail.storyboard */,
 				04D906A02520D716006D28C7 /* CharacterDetailVC.swift */,
 				04D906DD25212149006D28C7 /* DetailExpationImg.swift */,
-				04D906E225212177006D28C7 /* DetailExpationImg.storyboard */,
+				0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */,
 			);
 			path = "Character Detail";
 			sourceTree = "<group>";
@@ -405,8 +405,8 @@
 			files = (
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
 				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
-				04D906E325212177006D28C7 /* DetailExpationImg.storyboard in Resources */,
 				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
+				0423F3B22521935B0083B826 /* DetailExpationImg.storyboard in Resources */,
 				04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */,
 				04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */,
 				04CC038E2519719600431213 /* Assets.xcassets in Resources */,
