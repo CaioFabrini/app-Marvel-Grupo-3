@@ -116,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0423F3B625222D750083B826 /* DetailImg */ = {
+			isa = PBXGroup;
+			children = (
+				04D906DD25212149006D28C7 /* DetailExpationImg.swift */,
+				0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */,
+			);
+			path = DetailImg;
+			sourceTree = "<group>";
+		};
 		04CC03752519719400431213 = {
 			isa = PBXGroup;
 			children = (
@@ -223,11 +232,10 @@
 		04CC03D7251A18A400431213 /* Character Detail */ = {
 			isa = PBXGroup;
 			children = (
+				0423F3B625222D750083B826 /* DetailImg */,
 				04D906A52520E170006D28C7 /* Header */,
 				04CC040A251AD1F800431213 /* CharacterDetail.storyboard */,
 				04D906A02520D716006D28C7 /* CharacterDetailVC.swift */,
-				04D906DD25212149006D28C7 /* DetailExpationImg.swift */,
-				0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */,
 			);
 			path = "Character Detail";
 			sourceTree = "<group>";

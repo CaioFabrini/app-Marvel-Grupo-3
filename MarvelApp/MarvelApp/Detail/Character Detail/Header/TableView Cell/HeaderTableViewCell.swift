@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol SelectedCollectionHeaderTableViewCell: class{
-    func imageSelected(index:Int)
+    func imageSelected(image: String)
 }
 
 
@@ -79,7 +79,7 @@ extension HeaderTableViewCell:UICollectionViewDataSource,UICollectionViewDelegat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
-        self.delegate?.imageSelected(index:indexPath.row)
+        self.delegate?.imageSelected(image: "")
     }
     
     

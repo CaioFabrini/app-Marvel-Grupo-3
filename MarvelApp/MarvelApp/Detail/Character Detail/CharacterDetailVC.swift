@@ -25,13 +25,20 @@ class CharacterDetailVC:BaseViewController{
         tableView.register(HeaderTableViewCell.nib(), forCellReuseIdentifier: HeaderTableViewCell.identifier)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailVC"{
+            let detailImage = segue.destination as? DetailExpationImg
+            detailImage?.imageDescription = "Imagem 36"
+        }
+    }
+    
     
     
 }
 
 extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
-    func imageSelected(index: Int) {
-        print(index)
+    func imageSelected(image: String) {
+        print(image)
        self.performSegue(withIdentifier: "detailVC", sender: nil)
     }
 }

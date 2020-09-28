@@ -14,11 +14,11 @@ class DetailExpationImg:BaseViewController{
     
     @IBOutlet weak var image: UIImageView!
     var model:Model?
-    
+    var imageDescription:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // self.image.image = model?.image
+        self.image.image = UIImage(named:imageDescription ?? "")
     }
     
     @IBAction func tappedBackButton(_ sender: UIButton) {
