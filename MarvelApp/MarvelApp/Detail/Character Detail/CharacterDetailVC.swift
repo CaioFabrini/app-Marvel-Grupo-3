@@ -11,11 +11,21 @@ import UIKit
 class CharacterDetailVC:BaseViewController{
     
     @IBOutlet weak var tableView: UITableView!
+    var imageSelected:String?
+    var arrayModel:[Model] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configTableView()
-        
+        self.add()
+    }
+    
+    func add(){
+        self.arrayModel.append(Model(nome: "teste1", image: "Imagem 26"))
+        self.arrayModel.append(Model(nome: "teste2", image: "Imagem 27"))
+        self.arrayModel.append(Model(nome: "teste3", image: "Imagem 28"))
+        self.arrayModel.append(Model(nome: "teste4", image: "Imagem 29"))
+        self.arrayModel.append(Model(nome: "teste5", image: "Imagem 30"))
     }
     
     func configTableView(){
@@ -28,7 +38,7 @@ class CharacterDetailVC:BaseViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailVC"{
             let detailImage = segue.destination as? DetailExpationImg
-            detailImage?.imageDescription = "Imagem 36"
+            detailImage?.imageDescription = self.imageSelected
         }
     }
     
@@ -39,7 +49,8 @@ class CharacterDetailVC:BaseViewController{
 extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
     func imageSelected(image: String) {
         print(image)
-       self.performSegue(withIdentifier: "detailVC", sender: nil)
+        self.imageSelected = image
+        self.performSegue(withIdentifier: "detailVC", sender: nil)
     }
 }
 
@@ -54,12 +65,12 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier, for: indexPath) as! HeaderTableViewCell
             cell.delegate(delegate: self)
-        
+            cell.config(model:self.arrayModel)
             return cell
         }
         
         
-    return UITableViewCell()
+        return UITableViewCell()
     }
 }
 
@@ -67,7 +78,7 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
 
 class Model{
     var name:String?
-    var image:UIImage?
+    var image:String?
     var detail:String?
     var isSelectedFavorite:Bool?
     var subName:String?
@@ -87,7 +98,8 @@ class Model{
     var powers:String?
     var groupAffiliation:String?
     
-    init(image:UIImage?){
+    init(nome:String,image:String){
         self.image = image
+        self.name = nome
     }
 }

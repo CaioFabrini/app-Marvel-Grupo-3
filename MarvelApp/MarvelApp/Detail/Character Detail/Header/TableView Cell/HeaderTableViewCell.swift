@@ -28,7 +28,7 @@ class HeaderTableViewCell: UITableViewCell{
     
     
     weak var delegate:SelectedCollectionHeaderTableViewCell?
-    
+    var model:[Model] = []
     func delegate(delegate:SelectedCollectionHeaderTableViewCell){
         self.delegate = delegate
     }
@@ -51,6 +51,10 @@ class HeaderTableViewCell: UITableViewCell{
         
     }
     
+    func config(model:[Model]){
+        self.model = model
+    }
+    
     func configScreen(){
         self.subView.clipsToBounds = true
         self.subView.backgroundColor = .white
@@ -68,18 +72,22 @@ class HeaderTableViewCell: UITableViewCell{
 
 extension HeaderTableViewCell:UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return self.model.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HeaderCollectionViewCell.identifier, for: indexPath) as? HeaderCollectionViewCell
+        
+        cell?.configure(with: self.model[indexPath.row])
         
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
-        self.delegate?.imageSelected(image: "")
+        let dados = model[indexPath.row]
+        print(dados.name)
+        self.delegate?.imageSelected(image: dados.image ?? "")
     }
     
     

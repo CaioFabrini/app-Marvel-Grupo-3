@@ -42,6 +42,9 @@
                 <constraint firstAttribute="trailing" secondItem="3wp-Mi-bgh" secondAttribute="trailing" constant="4" id="qo0-LB-v2f"/>
             </constraints>
             <size key="customSize" width="146" height="175"/>
+            <connections>
+                <outlet property="image" destination="T2B-Kd-Drk" id="3zj-ig-RxX"/>
+            </connections>
             <point key="canvasLocation" x="210.1449275362319" y="89.397321428571431"/>
         </collectionViewCell>
     </objects>
