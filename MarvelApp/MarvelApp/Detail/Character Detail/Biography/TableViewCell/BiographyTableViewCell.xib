@@ -23,26 +23,27 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-ea-eoy">
                                 <rect key="frame" x="25" y="15" width="198" height="24"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="4h7-cV-CkK"/>
                                     <constraint firstAttribute="width" constant="198" id="56R-Jg-0Ip"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KZh-Do-fby">
-                                <rect key="frame" x="25" y="51" width="270" height="737"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZh-Do-fby">
+                                <rect key="frame" x="25" y="41" width="270" height="747"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ex xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariaturut aliquip ex ea commodo consequat. Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla pariatur. Ex xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in aboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="height" constant="788" id="2m1-CD-UiB"/>
                             <constraint firstAttribute="bottom" secondItem="KZh-Do-fby" secondAttribute="bottom" id="9xf-Tr-8Xk"/>
-                            <constraint firstAttribute="height" constant="788" id="XUn-T0-5iL"/>
                             <constraint firstItem="hjO-ea-eoy" firstAttribute="top" secondItem="AA0-Vg-PVV" secondAttribute="top" constant="15" id="a5X-MO-Dm1"/>
-                            <constraint firstItem="KZh-Do-fby" firstAttribute="top" secondItem="hjO-ea-eoy" secondAttribute="bottom" constant="12" id="bJO-Ga-RA6"/>
+                            <constraint firstItem="KZh-Do-fby" firstAttribute="top" secondItem="hjO-ea-eoy" secondAttribute="bottom" constant="2" id="bJO-Ga-RA6"/>
                             <constraint firstItem="hjO-ea-eoy" firstAttribute="leading" secondItem="KZh-Do-fby" secondAttribute="leading" id="dzT-f2-Yo5"/>
                             <constraint firstAttribute="trailing" secondItem="KZh-Do-fby" secondAttribute="trailing" constant="25" id="lV1-Hc-Xoz"/>
                             <constraint firstItem="KZh-Do-fby" firstAttribute="leading" secondItem="AA0-Vg-PVV" secondAttribute="leading" constant="25" id="yea-2Q-Ylz"/>

@@ -34,6 +34,12 @@ class CharacterDetailVC:BaseViewController{
         self.tableView.separatorColor = .clear
         tableView.register(HeaderTableViewCell.nib(), forCellReuseIdentifier: HeaderTableViewCell.identifier)
         tableView.register(BiographyTableViewCell.nib(), forCellReuseIdentifier: BiographyTableViewCell.identifier)
+        tableView.register(CharacterSpecificationTableViewCell.nib(), forCellReuseIdentifier: CharacterSpecificationTableViewCell.identifier)
+        tableView.register(SubViewTableViewCell.nib(),forCellReuseIdentifier: SubViewTableViewCell.identifier)
+        
+        
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,7 +64,7 @@ extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
 
 extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -72,6 +78,14 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: BiographyTableViewCell.identifier, for: indexPath) as! BiographyTableViewCell
             cell.titleLabel.text = "Caio"
            // cell.descriptionTextView.text = "aaaaaaaaaa"
+            return cell
+        }else if indexPath.row == 2{
+            let cell = tableView.dequeueReusableCell(withIdentifier: CharacterSpecificationTableViewCell.identifier, for: indexPath) as! CharacterSpecificationTableViewCell
+            
+            return cell
+        }else if indexPath.row == 3{
+            let cell = tableView.dequeueReusableCell(withIdentifier: SubViewTableViewCell.identifier, for: indexPath) as! SubViewTableViewCell
+            
             return cell
         }
         
