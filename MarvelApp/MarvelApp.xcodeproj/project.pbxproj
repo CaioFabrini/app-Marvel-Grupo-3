@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0423F3B22521935B0083B826 /* DetailExpationImg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */; };
+		0423F3CD2523B7700083B826 /* BiographyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423F3CB2523B7700083B826 /* BiographyTableViewCell.swift */; };
+		0423F3CE2523B7700083B826 /* BiographyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0423F3CC2523B7700083B826 /* BiographyTableViewCell.xib */; };
 		04CC03822519719400431213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03812519719400431213 /* AppDelegate.swift */; };
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
 		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
@@ -56,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailExpationImg.storyboard; sourceTree = "<group>"; };
+		0423F3CB2523B7700083B826 /* BiographyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyTableViewCell.swift; sourceTree = "<group>"; };
+		0423F3CC2523B7700083B826 /* BiographyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiographyTableViewCell.xib; sourceTree = "<group>"; };
 		04CC037E2519719400431213 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC03812519719400431213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,23 @@
 				0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */,
 			);
 			path = DetailImg;
+			sourceTree = "<group>";
+		};
+		0423F3C82523B69F0083B826 /* Biography */ = {
+			isa = PBXGroup;
+			children = (
+				0423F3CA2523B7360083B826 /* TableViewCell */,
+			);
+			path = Biography;
+			sourceTree = "<group>";
+		};
+		0423F3CA2523B7360083B826 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0423F3CB2523B7700083B826 /* BiographyTableViewCell.swift */,
+				0423F3CC2523B7700083B826 /* BiographyTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		04CC03752519719400431213 = {
@@ -232,6 +253,7 @@
 		04CC03D7251A18A400431213 /* Character Detail */ = {
 			isa = PBXGroup;
 			children = (
+				0423F3C82523B69F0083B826 /* Biography */,
 				0423F3B625222D750083B826 /* DetailImg */,
 				04D906A52520E170006D28C7 /* Header */,
 				04CC040A251AD1F800431213 /* CharacterDetail.storyboard */,
@@ -414,6 +436,7 @@
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
 				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
 				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
+				0423F3CE2523B7700083B826 /* BiographyTableViewCell.xib in Resources */,
 				0423F3B22521935B0083B826 /* DetailExpationImg.storyboard in Resources */,
 				04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */,
 				04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */,
@@ -453,6 +476,7 @@
 				04D906A82520E1E6006D28C7 /* HeaderTableViewCell.swift in Sources */,
 				04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */,
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
+				0423F3CD2523B7700083B826 /* BiographyTableViewCell.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */,

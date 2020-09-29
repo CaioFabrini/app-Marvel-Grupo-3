@@ -86,7 +86,7 @@ extension HeaderTableViewCell:UICollectionViewDataSource,UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
         let dados = model[indexPath.row]
-        print(dados.name)
+        print(dados.name ?? "")
         self.delegate?.imageSelected(image: dados.image ?? "")
     }
     

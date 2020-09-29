@@ -33,6 +33,7 @@ class CharacterDetailVC:BaseViewController{
         self.tableView.dataSource = self
         self.tableView.separatorColor = .clear
         tableView.register(HeaderTableViewCell.nib(), forCellReuseIdentifier: HeaderTableViewCell.identifier)
+        tableView.register(BiographyTableViewCell.nib(), forCellReuseIdentifier: BiographyTableViewCell.identifier)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,7 +58,7 @@ extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
 
 extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,6 +67,11 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier, for: indexPath) as! HeaderTableViewCell
             cell.delegate(delegate: self)
             cell.config(model:self.arrayModel)
+            return cell
+        }else if indexPath.row == 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: BiographyTableViewCell.identifier, for: indexPath) as! BiographyTableViewCell
+            cell.titleLabel.text = "Caio"
+           // cell.descriptionTextView.text = "aaaaaaaaaa"
             return cell
         }
         
