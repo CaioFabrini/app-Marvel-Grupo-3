@@ -51,7 +51,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-kP-gJM">
                                 <rect key="frame" x="65" y="426" width="284" height="151"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TM7-vb-DZM">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TM7-vb-DZM">
                                         <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
                                         <color key="backgroundColor" red="0.74510318040000001" green="0.74508893490000005" blue="0.74509865050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -61,7 +61,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="sBN-wu-8RS">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="sBN-wu-8RS">
                                         <rect key="frame" x="0.0" y="86" width="284" height="65"/>
                                         <color key="backgroundColor" red="0.74510318040000001" green="0.74508893490000005" blue="0.74509865050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
