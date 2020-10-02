@@ -51,21 +51,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-kP-gJM">
                                 <rect key="frame" x="65" y="426" width="284" height="151"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TM7-vb-DZM">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="TM7-vb-DZM">
                                         <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.74510318040000001" green="0.74508893490000005" blue="0.74509865050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="vOg-Xj-PK1"/>
                                         </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="sBN-wu-8RS">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="sBN-wu-8RS">
                                         <rect key="frame" x="0.0" y="86" width="284" height="65"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.74510318040000001" green="0.74508893490000005" blue="0.74509865050000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="FXM-59-8Pb"/>
                                         </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -116,7 +118,9 @@
                     <connections>
                         <outlet property="forgotPasswordButton" destination="UEZ-mb-xnU" id="FhK-vF-KNg"/>
                         <outlet property="loginButton" destination="nna-Xs-glo" id="RtW-bw-mIW"/>
+                        <outlet property="passwordTextField" destination="sBN-wu-8RS" id="Qsc-ok-U7U"/>
                         <outlet property="signUpButton" destination="z8L-Po-Sv0" id="aEA-UM-gUy"/>
+                        <outlet property="usernameTextField" destination="TM7-vb-DZM" id="RbK-U7-vO0"/>
                         <segue destination="kQc-Do-es9" kind="show" identifier="homeTabBar" id="Xjg-a6-32D"/>
                         <segue destination="pXZ-gF-zic" kind="show" identifier="ForgotPassword" id="HMm-k3-MAm"/>
                         <segue destination="sjP-wf-DRQ" kind="show" identifier="SignUp" id="D4V-hl-rfx"/>
