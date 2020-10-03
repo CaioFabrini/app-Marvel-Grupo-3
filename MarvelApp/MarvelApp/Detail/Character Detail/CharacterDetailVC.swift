@@ -89,6 +89,10 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
 }
 
 extension CharacterDetailVC: SelectedCollectionHeaderTableViewCellProtocol{
+    func backButton() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func imageSelected(image: String) {
         print(image)
         self.imageSelected = image

@@ -11,11 +11,13 @@ import UIKit
 
 protocol SelectedCollectionHeaderTableViewCellProtocol: class{
     func imageSelected(image: String)
+    func backButton()
 }
 
 
 class HeaderTableViewCell: UITableViewCell{
     
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var nameCharacterLabel: UILabel!
@@ -63,6 +65,10 @@ class HeaderTableViewCell: UITableViewCell{
     }
     
     
+    @IBAction func tappedBackButton(_ sender: UIButton) {
+        print("tappedbackButton")
+        self.delegate?.backButton()
+    }
     @IBAction func tappedFavoriteButton(_ sender: UIButton) {
         print("tappedFavoriteButton")
     }
