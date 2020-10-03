@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol SelectedCollectionHeaderTableViewCell: class{
+protocol SelectedCollectionHeaderTableViewCellProtocol: class{
     func imageSelected(image: String)
 }
 
@@ -27,9 +27,9 @@ class HeaderTableViewCell: UITableViewCell{
     @IBOutlet weak var collectionController: UICollectionView!
     
     
-    weak var delegate:SelectedCollectionHeaderTableViewCell?
+    weak var delegate:SelectedCollectionHeaderTableViewCellProtocol?
     var model:[Model] = []
-    func delegate(delegate:SelectedCollectionHeaderTableViewCell){
+    func delegate(delegate:SelectedCollectionHeaderTableViewCellProtocol){
         self.delegate = delegate
     }
     

@@ -38,9 +38,6 @@ class CharacterDetailVC:BaseViewController{
         tableView.register(SubViewTableViewCell.nib(),forCellReuseIdentifier: SubViewTableViewCell.identifier)
         tableView.register(OtherTableViewCell.nib(),forCellReuseIdentifier: OtherTableViewCell.identifier)
         self.tableView.selectionFollowsFocus = false
-        
-        
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,15 +50,6 @@ class CharacterDetailVC:BaseViewController{
     
     
 }
-
-extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
-    func imageSelected(image: String) {
-        print(image)
-        self.imageSelected = image
-        self.performSegue(withIdentifier: "detailVC", sender: nil)
-    }
-}
-
 
 extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,7 +66,7 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
         }else if indexPath.row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: BiographyTableViewCell.identifier, for: indexPath) as! BiographyTableViewCell
             cell.titleLabel.text = "Biography"
-           // cell.descriptionTextView.text = "aaaaaaaaaa"
+           
             return cell
         }else if indexPath.row == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: CharacterSpecificationTableViewCell.identifier, for: indexPath) as! CharacterSpecificationTableViewCell
@@ -90,7 +78,8 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
             return cell
         }else if indexPath.row == 4{
             let cell = tableView.dequeueReusableCell(withIdentifier: OtherTableViewCell.identifier, for: indexPath) as! OtherTableViewCell
-            cell.othersLabel.text = "Fulano"
+            cell.otherLabel.text = "Fulano"
+            cell.delegate(delegate: self)
             return cell
         }
         
@@ -99,6 +88,21 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     }
 }
 
+extension CharacterDetailVC: SelectedCollectionHeaderTableViewCellProtocol{
+    func imageSelected(image: String) {
+        print(image)
+        self.imageSelected = image
+        self.performSegue(withIdentifier: "detailVC", sender: nil)
+    }
+}
+
+extension CharacterDetailVC: SelectedCollectionOtherTableViewCellProtocol{
+    func descritionImage(nome: String) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "CharacterDetail", bundle: nil)
+        let description = storyBoard.instantiateViewController(withIdentifier: "CharacterDetail")
+        self.present(description, animated: true, completion: nil)
+    }
+}
 
 
 class Model{
