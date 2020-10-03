@@ -9,6 +9,9 @@ import UIKit
 
 class HeaderComicsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var subView: UIView!
+    
+    
     static let identifier = "HeaderComicsTableViewCell"
     
     static func nib() -> UINib{
@@ -18,7 +21,7 @@ class HeaderComicsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.subView.roundCorners([.topLeft], radius: 55)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
