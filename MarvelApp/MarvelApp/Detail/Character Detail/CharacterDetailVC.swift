@@ -36,7 +36,7 @@ class CharacterDetailVC:BaseViewController{
         tableView.register(BiographyTableViewCell.nib(), forCellReuseIdentifier: BiographyTableViewCell.identifier)
         tableView.register(CharacterSpecificationTableViewCell.nib(), forCellReuseIdentifier: CharacterSpecificationTableViewCell.identifier)
         tableView.register(SubViewTableViewCell.nib(),forCellReuseIdentifier: SubViewTableViewCell.identifier)
-        
+        self.tableView.selectionFollowsFocus = false
         
         
         
