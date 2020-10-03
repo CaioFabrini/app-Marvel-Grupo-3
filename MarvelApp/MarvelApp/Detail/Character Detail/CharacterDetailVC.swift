@@ -76,7 +76,7 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
             return cell
         }else if indexPath.row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: BiographyTableViewCell.identifier, for: indexPath) as! BiographyTableViewCell
-            cell.titleLabel.text = "Caio"
+            cell.titleLabel.text = "Biography"
            // cell.descriptionTextView.text = "aaaaaaaaaa"
             return cell
         }else if indexPath.row == 2{
