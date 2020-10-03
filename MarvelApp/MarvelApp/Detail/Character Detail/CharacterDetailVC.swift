@@ -36,6 +36,7 @@ class CharacterDetailVC:BaseViewController{
         tableView.register(BiographyTableViewCell.nib(), forCellReuseIdentifier: BiographyTableViewCell.identifier)
         tableView.register(CharacterSpecificationTableViewCell.nib(), forCellReuseIdentifier: CharacterSpecificationTableViewCell.identifier)
         tableView.register(SubViewTableViewCell.nib(),forCellReuseIdentifier: SubViewTableViewCell.identifier)
+        tableView.register(OtherTableViewCell.nib(),forCellReuseIdentifier: OtherTableViewCell.identifier)
         self.tableView.selectionFollowsFocus = false
         
         
@@ -64,7 +65,7 @@ extension CharacterDetailVC: SelectedCollectionHeaderTableViewCell{
 
 extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -86,6 +87,10 @@ extension CharacterDetailVC: UITableViewDelegate,UITableViewDataSource{
         }else if indexPath.row == 3{
             let cell = tableView.dequeueReusableCell(withIdentifier: SubViewTableViewCell.identifier, for: indexPath) as! SubViewTableViewCell
             
+            return cell
+        }else if indexPath.row == 4{
+            let cell = tableView.dequeueReusableCell(withIdentifier: OtherTableViewCell.identifier, for: indexPath) as! OtherTableViewCell
+            cell.othersLabel.text = "Fulano"
             return cell
         }
         

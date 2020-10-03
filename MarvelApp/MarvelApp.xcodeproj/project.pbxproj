@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041257832528FF220053631B /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041257812528FF220053631B /* OtherCollectionViewCell.swift */; };
+		041257842528FF220053631B /* OtherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041257822528FF220053631B /* OtherCollectionViewCell.xib */; };
+		0412578D2528FF3E0053631B /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412578B2528FF3E0053631B /* OtherTableViewCell.swift */; };
+		0412578E2528FF3E0053631B /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412578C2528FF3E0053631B /* OtherTableViewCell.xib */; };
 		042110C32523FDA90007431D /* SubViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042110C12523FDA90007431D /* SubViewTableViewCell.swift */; };
 		042110C42523FDA90007431D /* SubViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042110C22523FDA90007431D /* SubViewTableViewCell.xib */; };
 		0423F3B22521935B0083B826 /* DetailExpationImg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */; };
@@ -61,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041257812528FF220053631B /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCollectionViewCell.swift; sourceTree = "<group>"; };
+		041257822528FF220053631B /* OtherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherCollectionViewCell.xib; sourceTree = "<group>"; };
+		0412578B2528FF3E0053631B /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
+		0412578C2528FF3E0053631B /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
 		042110C12523FDA90007431D /* SubViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewTableViewCell.swift; sourceTree = "<group>"; };
 		042110C22523FDA90007431D /* SubViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubViewTableViewCell.xib; sourceTree = "<group>"; };
 		0423F3B12521935B0083B826 /* DetailExpationImg.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailExpationImg.storyboard; sourceTree = "<group>"; };
@@ -128,6 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0412577E2528FEE30053631B /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				041257802528FF020053631B /* CollectionView */,
+				0412577F2528FEF80053631B /* TableView */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		0412577F2528FEF80053631B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0412578B2528FF3E0053631B /* OtherTableViewCell.swift */,
+				0412578C2528FF3E0053631B /* OtherTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		041257802528FF020053631B /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				041257812528FF220053631B /* OtherCollectionViewCell.swift */,
+				041257822528FF220053631B /* OtherCollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		042110C02523FD360007431D /* Sub Image */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +330,7 @@
 		04CC03D7251A18A400431213 /* Character Detail */ = {
 			isa = PBXGroup;
 			children = (
+				0412577E2528FEE30053631B /* Connections */,
 				042110C02523FD360007431D /* Sub Image */,
 				0423F4232523D2E70083B826 /* Character Specification  */,
 				0423F3C82523B69F0083B826 /* Biography */,
@@ -481,10 +517,12 @@
 				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
 				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
 				0423F3CE2523B7700083B826 /* BiographyTableViewCell.xib in Resources */,
+				0412578E2528FF3E0053631B /* OtherTableViewCell.xib in Resources */,
 				0423F3B22521935B0083B826 /* DetailExpationImg.storyboard in Resources */,
 				04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */,
 				04CC03F4251A1FA100431213 /* Profile.storyboard in Resources */,
 				04CC038E2519719600431213 /* Assets.xcassets in Resources */,
+				041257842528FF220053631B /* OtherCollectionViewCell.xib in Resources */,
 				04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */,
 				04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */,
 				04CC03EA251A1F3500431213 /* Home.storyboard in Resources */,
@@ -527,10 +565,12 @@
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */,
 				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
+				0412578D2528FF3E0053631B /* OtherTableViewCell.swift in Sources */,
 				04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */,
 				042110C32523FDA90007431D /* SubViewTableViewCell.swift in Sources */,
 				0423F4272523D3620083B826 /* CharacterSpecificationTableViewCell.swift in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
+				041257832528FF220053631B /* OtherCollectionViewCell.swift in Sources */,
 				04D906C9252111F2006D28C7 /* UIView + Extension.swift in Sources */,
 				04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */,
 			);
