@@ -30,12 +30,26 @@
                                     <segue destination="pXZ-gF-zic" kind="show" id="8lh-CB-keG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShY-eP-ohq">
-                                <rect key="frame" x="177" y="607" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShY-eP-ohq">
+                                <rect key="frame" x="176.5" y="607" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G5n-5M-5vb"/>
+                                    <constraint firstAttribute="width" constant="61" id="JLk-8n-GFC"/>
+                                </constraints>
                                 <state key="normal" title="Detalhes"/>
                                 <connections>
                                     <segue destination="3Fy-Ae-vlH" kind="show" id="Qak-b1-O1q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tff-Zx-PQK">
+                                <rect key="frame" x="181" y="664" width="52" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2wR-YR-YdP"/>
+                                    <constraint firstAttribute="width" constant="52" id="vXa-Qh-1dL"/>
+                                </constraints>
+                                <state key="normal" title="Comics"/>
+                                <connections>
+                                    <segue destination="LX6-uB-kv1" kind="show" id="tcV-CI-jF1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,8 +59,12 @@
                             <constraint firstItem="UEZ-mb-xnU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="2rs-W0-keQ"/>
                             <constraint firstItem="UEZ-mb-xnU" firstAttribute="top" secondItem="nna-Xs-glo" secondAttribute="bottom" constant="43" id="Dgc-uG-xRK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UEZ-mb-xnU" secondAttribute="trailing" constant="92" id="E4J-rC-jdD"/>
+                            <constraint firstItem="tff-Zx-PQK" firstAttribute="centerX" secondItem="ShY-eP-ohq" secondAttribute="centerX" id="U9f-PL-vbb"/>
                             <constraint firstItem="nna-Xs-glo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VHP-CB-IsQ"/>
+                            <constraint firstItem="ShY-eP-ohq" firstAttribute="centerX" secondItem="nna-Xs-glo" secondAttribute="centerX" id="XBz-uZ-MFm"/>
+                            <constraint firstItem="ShY-eP-ohq" firstAttribute="top" secondItem="UEZ-mb-xnU" secondAttribute="bottom" constant="71" id="XZB-3Y-JB9"/>
                             <constraint firstItem="nna-Xs-glo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nek-m3-CoN"/>
+                            <constraint firstItem="tff-Zx-PQK" firstAttribute="top" secondItem="ShY-eP-ohq" secondAttribute="bottom" constant="27" id="onB-i3-Nlw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -82,7 +100,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaD-Gm-aQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="260"/>
+            <point key="canvasLocation" x="755" y="233"/>
+        </scene>
+        <!--ComicsDetail-->
+        <scene sceneID="Fjb-IE-FEh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComicsDetail" referencedIdentifier="ComicsDetail" id="LX6-uB-kv1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xUv-My-U7d"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIF-Q3-krK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741" y="311"/>
         </scene>
     </scenes>
     <resources>
