@@ -11,7 +11,6 @@
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
 		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
 		04CC03892519719400431213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03872519719400431213 /* Main.storyboard */; };
-		04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */; };
 		04CC038E2519719600431213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CC038D2519719600431213 /* Assets.xcassets */; };
 		04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC038F2519719600431213 /* LaunchScreen.storyboard */; };
 		04CC039C2519719600431213 /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC039B2519719600431213 /* MarvelAppTests.swift */; };
@@ -52,7 +51,6 @@
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04CC03852519719400431213 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		04CC03882519719400431213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04CC038B2519719400431213 /* MarvelApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarvelApp.xcdatamodel; sourceTree = "<group>"; };
 		04CC038D2519719600431213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CC03902519719600431213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CC03922519719600431213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				04CC03832519719400431213 /* SceneDelegate.swift */,
 				04CC038F2519719600431213 /* LaunchScreen.storyboard */,
 				04CC03922519719600431213 /* Info.plist */,
-				04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";
@@ -387,7 +384,6 @@
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
-				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,19 +711,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				04CC038B2519719400431213 /* MarvelApp.xcdatamodel */,
-			);
-			currentVersion = 04CC038B2519719400431213 /* MarvelApp.xcdatamodel */;
-			path = MarvelApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 04CC03762519719400431213 /* Project object */;
 }
