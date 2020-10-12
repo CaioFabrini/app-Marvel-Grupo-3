@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForgotPasswordVC: BaseViewController {
+class ForgotPasswordVC: BaseViewController{
     //commit: Criei as IBOutlets da tela e actions
     
     @IBOutlet weak var cpfTextField: UITextField!
@@ -22,8 +22,16 @@ class ForgotPasswordVC: BaseViewController {
         super.viewDidLoad()
         
         self.configScreen()
+        
        
     }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        
+    }
+    
     // commit: arredondei os textfields e botões
     func configScreen(){
         
@@ -39,6 +47,7 @@ class ForgotPasswordVC: BaseViewController {
     
     }
     
+    
     @IBAction func tappedUpdateButton(_ sender: UIButton) {
         
     }
@@ -47,8 +56,7 @@ class ForgotPasswordVC: BaseViewController {
         
     }
     
+
     }
-    
-    
     
 
