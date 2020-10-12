@@ -56,6 +56,8 @@ class RegisterVC: BaseViewController {
         self.performSegue(withIdentifier: "homeTabBar", sender: nil)
     }
     
+   
     
+ 
     
 }

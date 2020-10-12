@@ -152,6 +152,7 @@
                         <outlet property="signUpButton" destination="SnQ-fr-AfN" id="JJq-uo-Z7x"/>
                         <outlet property="usernameTextField" destination="6Ct-8h-RmK" id="YYU-yn-FcV"/>
                         <segue destination="8xX-OY-q7p" kind="show" identifier="homeTabBar" id="RmE-pY-HlB"/>
+                        <segue destination="FQ7-na-XeK" kind="show" identifier="mainScreen" id="DgD-NV-8XA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCQ-pP-QDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -167,6 +168,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3s-Gy-Ksm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="797" y="100"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="iou-6r-cW9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Main" id="FQ7-na-XeK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mnT-7u-nhk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFw-wT-LB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="194"/>
         </scene>
     </scenes>
     <resources>
