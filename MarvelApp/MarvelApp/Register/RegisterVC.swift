@@ -45,10 +45,17 @@ class RegisterVC: BaseViewController {
         self.confirmPasswordTextField.layer.masksToBounds = true
         self.confirmPasswordTextField.layer.cornerRadius = 24
         self.usernameTextField.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-        self.emailTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        self.cpfTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        self.emailTextField.attributedPlaceholder = NSAttributedString(string: "E-mail", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        self.cpfTextField.attributedPlaceholder = NSAttributedString(string: "CPF", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         self.passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
-        self.confirmPasswordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        self.confirmPasswordTextField.attributedPlaceholder = NSAttributedString(string: "Confirm Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
 
 }
+    
+    @IBAction func TappedSignUp(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "homeTabBar", sender: nil)
+    }
+    
+    
+    
 }

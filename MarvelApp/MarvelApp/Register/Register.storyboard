@@ -110,6 +110,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="TappedSignUp:" destination="I58-SI-UtH" eventType="touchUpInside" id="5Vt-tb-TwQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uyd-aU-3lY"/>
@@ -148,11 +151,22 @@
                         <outlet property="passwordTextField" destination="3LT-aP-XLa" id="mRY-EO-Blh"/>
                         <outlet property="signUpButton" destination="SnQ-fr-AfN" id="JJq-uo-Z7x"/>
                         <outlet property="usernameTextField" destination="6Ct-8h-RmK" id="YYU-yn-FcV"/>
+                        <segue destination="8xX-OY-q7p" kind="show" identifier="homeTabBar" id="RmE-pY-HlB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCQ-pP-QDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="240.57971014492756" y="99.776785714285708"/>
+        </scene>
+        <!--homeTabBar-->
+        <scene sceneID="Ezd-qJ-D3L">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeTabBar" referencedIdentifier="homeTabBar" id="8xX-OY-q7p" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="I82-kZ-UWD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3s-Gy-Ksm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="100"/>
         </scene>
     </scenes>
     <resources>
