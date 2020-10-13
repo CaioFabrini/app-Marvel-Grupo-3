@@ -21,12 +21,17 @@ class RegisterVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.configScreen()
+        
        
         
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.configScreen()
+        
+    }
     
     
     func configScreen(){
