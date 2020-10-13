@@ -28,6 +28,7 @@ class RegisterVC: BaseViewController {
     }
     
     
+    
     func configScreen(){
         self.signUpButton.layer.cornerRadius = 24
         self.signUpButton.layer.borderWidth = 3
