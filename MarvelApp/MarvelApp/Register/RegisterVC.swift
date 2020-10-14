@@ -9,6 +9,8 @@ import UIKit
 
 class RegisterVC: BaseViewController {
 
+    
+    
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
@@ -21,35 +23,38 @@ class RegisterVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.configScreen()
         
-       
+    
         
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.configScreen()
-        
-    }
+    
     
     
     func configScreen(){
+       
         self.signUpButton.layer.cornerRadius = 24
         self.signUpButton.layer.borderWidth = 3
         self.signUpButton.layer.borderColor = UIColor.white.cgColor
 
         self.usernameTextField.layer.cornerRadius = 24
         self.usernameTextField.clipsToBounds = true
-        self.emailTextField.layer.cornerRadius = 24
         self.usernameTextField.layer.masksToBounds = true
+       
+        self.emailTextField.layer.cornerRadius = 24
         self.emailTextField.layer.masksToBounds = true
+       
         self.cpfTextField.layer.masksToBounds = true
         self.cpfTextField.layer.cornerRadius = 24
+       
         self.passwordTextField.layer.cornerRadius = 24
         self.passwordTextField.layer.masksToBounds = true
+       
         self.confirmPasswordTextField.layer.masksToBounds = true
         self.confirmPasswordTextField.layer.cornerRadius = 24
+       
         self.usernameTextField.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         self.emailTextField.attributedPlaceholder = NSAttributedString(string: "E-mail", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         self.cpfTextField.attributedPlaceholder = NSAttributedString(string: "CPF", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
@@ -63,6 +68,9 @@ class RegisterVC: BaseViewController {
     }
     
    
+    @IBAction func tappedLogin(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
  
     
