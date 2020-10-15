@@ -94,7 +94,7 @@ class ProfileViewController: UIViewController {
 
     @IBAction func changeCollectionView(_ sender: UISegmentedControl) {
         
-      /*  if sender.selectedSegmentIndex == 0 {
+        if sender.selectedSegmentIndex == 0 {
             items = arrayCharactersItems.count
         } else {
             
@@ -104,7 +104,7 @@ class ProfileViewController: UIViewController {
         segmentedItems = sender.selectedSegmentIndex
         setupCollectionView()
         profileCollectionView.reloadData()
-*/
+
     }
 }
 
@@ -120,12 +120,12 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
         }
         
         cell.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
-       /* if segmentedItems == 0 {
+        if segmentedItems == 0 {
             cell.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
         } else {
             cell.ivItemCell.image = UIImage(named:arrayComicsItems[indexPath.item].imageName)
         
-    } */
+    }
         return cell
 
 }
@@ -135,3 +135,4 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
 }
+

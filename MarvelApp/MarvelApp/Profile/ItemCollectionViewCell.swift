@@ -17,3 +17,5 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
 
 }
+
+var amanda: String = "Amanda"
