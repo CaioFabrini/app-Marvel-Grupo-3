@@ -27,6 +27,9 @@
 		04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03FF251A23F100431213 /* ConfigProfile.storyboard */; };
 		04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040A251AD1F800431213 /* CharacterDetail.storyboard */; };
 		04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040F251AD20F00431213 /* ComicsDetail.storyboard */; };
+		764136092537DD50009DF57F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764136082537DD50009DF57F /* ProfileViewController.swift */; };
+		7641360F2537DE13009DF57F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641360D2537DE13009DF57F /* ItemCollectionViewCell.swift */; };
+		764136102537DE13009DF57F /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7641360E2537DE13009DF57F /* ItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		04CC03FF251A23F100431213 /* ConfigProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigProfile.storyboard; sourceTree = "<group>"; };
 		04CC040A251AD1F800431213 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		04CC040F251AD20F00431213 /* ComicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComicsDetail.storyboard; sourceTree = "<group>"; };
+		764136082537DD50009DF57F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7641360D2537DE13009DF57F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		7641360E2537DE13009DF57F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +222,9 @@
 			children = (
 				04CC03FE251A23D300431213 /* Config Profile */,
 				04CC03F3251A1FA100431213 /* Profile.storyboard */,
+				764136082537DD50009DF57F /* ProfileViewController.swift */,
+				7641360D2537DE13009DF57F /* ItemCollectionViewCell.swift */,
+				7641360E2537DE13009DF57F /* ItemCollectionViewCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -347,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764136102537DE13009DF57F /* ItemCollectionViewCell.xib in Resources */,
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
 				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
 				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
@@ -387,6 +397,8 @@
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
+				764136092537DD50009DF57F /* ProfileViewController.swift in Sources */,
+				7641360F2537DE13009DF57F /* ItemCollectionViewCell.swift in Sources */,
 				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 			);
