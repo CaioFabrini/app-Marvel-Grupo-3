@@ -10,7 +10,10 @@ import UIKit
 class ConfigProfileVC: UIViewController {
 
     @IBAction func backButton(_ sender: UIButton) {
-     dismiss(animated: true, completion: nil)
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+//        let profileVC = storyBoard.instantiateViewController(withIdentifier: "ProfileVC2")
+//        self.present(profileVC, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

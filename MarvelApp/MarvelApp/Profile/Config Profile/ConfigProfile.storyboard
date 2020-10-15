@@ -9,16 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ProfileVC-->
-        <scene sceneID="OXK-GO-rdj">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileVC" id="sn8-Ri-P0u" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="lSE-8u-hfE"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ib1-lE-woQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-119" y="-81"/>
-        </scene>
         <!--Config ProfileVC-->
         <scene sceneID="rcN-jw-e7T">
             <objects>
@@ -49,7 +39,6 @@
                                 </state>
                                 <connections>
                                     <action selector="backButton:" destination="7jf-Zw-THm" eventType="touchUpInside" id="com-FC-Awb"/>
-                                    <segue destination="sn8-Ri-P0u" kind="show" id="pX5-gc-mRz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpy-fh-6jp">
