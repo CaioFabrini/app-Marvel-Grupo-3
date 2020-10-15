@@ -2,7 +2,7 @@
 //  ItemCollectionViewCell.swift
 //  MarvelApp
 //
-//  Created by Adriel Alves on 14/10/20.
+//  Created by Amanda Nolasco on 14/10/20.
 //
 
 import UIKit

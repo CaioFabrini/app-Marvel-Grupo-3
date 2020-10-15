@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct ProfileViewItem{
+struct ProfileViewItem {
     
     var imageName: String
     
@@ -24,7 +24,7 @@ class ProfileViewController: UIViewController {
     private var collectionViewFlowLayout: UICollectionViewFlowLayout!
     var segmentedItems:Int = 0
     var items:Int = 0
-    var cellIdentifier = "itemCell"
+    var cellIdentifier = "ItemCollectionViewCell"
     var arrayCharactersItems: [ProfileViewItem] = [ProfileViewItem(imageName: "26"),
                                                    ProfileViewItem(imageName: "55"),
                                                    ProfileViewItem(imageName: "84"),
@@ -40,7 +40,19 @@ class ProfileViewController: UIViewController {
         
         super.viewDidLoad()
         setupCollectionView()
-        // Do any additional setup after loading the view.
+    
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        collectionViewItemSize()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        self.profileCollectionView.reloadData()
+        
     }
     
 
@@ -49,14 +61,16 @@ class ProfileViewController: UIViewController {
         profileCollectionView.delegate = self
         profileCollectionView.dataSource = self
         
-        let nib = UINib(nibName: "itemCell", bundle: nil)
+        let nib = UINib(nibName: "ItemCollectionViewCell", bundle: nil)
         
-        profileCollectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
+        profileCollectionView.register( nib, forCellWithReuseIdentifier: cellIdentifier )
         
     }
     
-    func CollectionViewItemSize(){
+    func collectionViewItemSize(){
         
+        if collectionViewFlowLayout == nil{
+    
         let itemsPerRow: CGFloat = 2
         let lineSpacing: CGFloat = 5
         let internItemSpacing: CGFloat = 5
@@ -70,12 +84,12 @@ class ProfileViewController: UIViewController {
         collectionViewFlowLayout.minimumLineSpacing = lineSpacing
         collectionViewFlowLayout.minimumInteritemSpacing = internItemSpacing
         profileCollectionView.setCollectionViewLayout(collectionViewFlowLayout, animated: true)
-        
+        }
     }
 
     @IBAction func changeCollectionView(_ sender: UISegmentedControl) {
         
-        if sender.selectedSegmentIndex == 0 {
+      /*  if sender.selectedSegmentIndex == 0 {
             items = arrayCharactersItems.count
         } else {
             
@@ -83,14 +97,15 @@ class ProfileViewController: UIViewController {
         }
         
         segmentedItems = sender.selectedSegmentIndex
+        setupCollectionView()
         profileCollectionView.reloadData()
-
+*/
     }
 }
 
 extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items
+        return arrayCharactersItems.count
         
     }
     
@@ -99,14 +114,19 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
             return UICollectionViewCell()
         }
         
-        if segmentedItems == 0 {
+        cell.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
+       /* if segmentedItems == 0 {
             cell.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
         } else {
             cell.ivItemCell.image = UIImage(named:arrayComicsItems[indexPath.item].imageName)
         
-    }
+    } */
         return cell
 
 }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("ok")
+    }
     
 }
