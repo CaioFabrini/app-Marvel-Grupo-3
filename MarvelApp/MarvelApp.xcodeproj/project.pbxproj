@@ -26,6 +26,9 @@
 		04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03FF251A23F100431213 /* ConfigProfile.storyboard */; };
 		04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040A251AD1F800431213 /* CharacterDetail.storyboard */; };
 		04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040F251AD20F00431213 /* ComicsDetail.storyboard */; };
+		04E26B0E2538F269006400F0 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E26B0D2538F269006400F0 /* ItemCollectionViewCell.swift */; };
+		04E26B132538F278006400F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E26B122538F278006400F0 /* ProfileViewController.swift */; };
+		04E26B182538F28A006400F0 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E26B172538F28A006400F0 /* ItemCollectionViewCell.xib */; };
 		763E5EC8253138E600762290 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E5EC7253138E600762290 /* ForgotPasswordVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		04CC03FF251A23F100431213 /* ConfigProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigProfile.storyboard; sourceTree = "<group>"; };
 		04CC040A251AD1F800431213 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		04CC040F251AD20F00431213 /* ComicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComicsDetail.storyboard; sourceTree = "<group>"; };
+		04E26B0D2538F269006400F0 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		04E26B122538F278006400F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04E26B172538F28A006400F0 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemCollectionViewCell.xib; path = MarvelApp/Profile/ItemCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		763E5EC7253138E600762290 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +222,8 @@
 			children = (
 				04CC03FE251A23D300431213 /* Config Profile */,
 				04CC03F3251A1FA100431213 /* Profile.storyboard */,
+				04E26B122538F278006400F0 /* ProfileViewController.swift */,
+				04E26B0D2538F269006400F0 /* ItemCollectionViewCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				04CC03FF251A23F100431213 /* ConfigProfile.storyboard */,
+				04E26B172538F28A006400F0 /* ItemCollectionViewCell.xib */,
 			);
 			path = "Config Profile";
 			sourceTree = "<group>";
@@ -347,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E26B182538F28A006400F0 /* ItemCollectionViewCell.xib in Resources */,
 				04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */,
 				04CC03DE251A1E3A00431213 /* HomeTabBar.storyboard in Resources */,
 				04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */,
@@ -389,6 +399,8 @@
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
+				04E26B132538F278006400F0 /* ProfileViewController.swift in Sources */,
+				04E26B0E2538F269006400F0 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

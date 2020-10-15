@@ -6,7 +6,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,7 +83,6 @@
                                 </state>
                                 <connections>
                                     <action selector="showSettingsButton:" destination="ggd-AK-drP" eventType="touchUpInside" id="nZP-wI-Kar"/>
-                                    <segue destination="qQ5-IG-8U2" kind="show" id="hiG-il-N5Y"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tpz-AS-IAH" userLabel="Profile CollectionView " customClass="ProfileViewController">
@@ -96,17 +94,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="02B-aF-fDy">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="131"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fIw-14-MxL">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="131"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="128" height="131"/>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gKn-59-HnG"/>
@@ -143,17 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU2-00-vJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.10144927536237" y="10.044642857142856"/>
-        </scene>
-        <!--ConfigProfile.storyboard-->
-        <scene sceneID="vL4-iu-7cC">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ConfigProfile.storyboard" storyboardName="ConfigProfile" referencedIdentifier="ConfigProfile.storyboard" id="qQ5-IG-8U2" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="cic-3g-Tkx"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hHC-ZG-COM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1567" y="-102"/>
+            <point key="canvasLocation" x="1000" y="13"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1Tp-Dl-dRN">

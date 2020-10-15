@@ -25,15 +25,15 @@ class ProfileViewController: UIViewController {
     var segmentedItems:Int = 0
     var items:Int = 0
     var cellIdentifier = "ItemCollectionViewCell"
-    var arrayCharactersItems: [ProfileViewItem] = [ProfileViewItem(imageName: "26"),
-                                                   ProfileViewItem(imageName: "55"),
-                                                   ProfileViewItem(imageName: "84"),
-                                                   ProfileViewItem(imageName: "85")]
+    var arrayCharactersItems: [ProfileViewItem] = [ProfileViewItem(imageName: "Imagem 26"),
+                                                   ProfileViewItem(imageName: "Imagem 55"),
+                                                   ProfileViewItem(imageName: "Imagem 30"),
+                                                   ProfileViewItem(imageName: "Imagem 31")]
     
-    var arrayComicsItems: [ProfileViewItem] = [ProfileViewItem(imageName:  "28"),
-                                                ProfileViewItem(imageName: "29"),
-                                                ProfileViewItem(imageName: "51"),
-                                                ProfileViewItem(imageName: "52")]
+    var arrayComicsItems: [ProfileViewItem] = [ProfileViewItem(imageName:  "Imagem 28"),
+                                                ProfileViewItem(imageName: "Imagem 29"),
+                                                ProfileViewItem(imageName: "Imagem 51"),
+                                                ProfileViewItem(imageName: "Imagem 52")]
     
     
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func showSettingsButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "configProfile" , sender: nil)
+       // self.performSegue(withIdentifier: "configProfile" , sender: nil)
         
     }
     
@@ -115,18 +115,16 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        guard let cell = profileCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ItemCollectionViewCell else{
-            return UICollectionViewCell()
-        }
+         let cell = profileCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ItemCollectionViewCell
         
-        cell.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
+        cell?.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
         if segmentedItems == 0 {
-            cell.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
-        } else {
-            cell.ivItemCell.image = UIImage(named:arrayComicsItems[indexPath.item].imageName)
+            cell?.ivItemCell.image = UIImage(named:arrayCharactersItems[indexPath.item].imageName)
+        } else{
+            cell?.ivItemCell.image = UIImage(named:arrayComicsItems[indexPath.item].imageName)
         
     }
-        return cell
+        return cell ?? UICollectionViewCell()
 
 }
     
