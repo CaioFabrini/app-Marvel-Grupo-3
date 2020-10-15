@@ -82,6 +82,10 @@
                                 <state key="normal" title="Button">
                                     <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                                 </state>
+                                <connections>
+                                    <action selector="showSettingsButton:" destination="ggd-AK-drP" eventType="touchUpInside" id="nZP-wI-Kar"/>
+                                    <segue destination="qQ5-IG-8U2" kind="show" id="hiG-il-N5Y"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tpz-AS-IAH" userLabel="Profile CollectionView " customClass="ProfileViewController">
                                 <rect key="frame" x="0.0" y="259.5" width="414" height="553.5"/>
@@ -140,6 +144,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU2-00-vJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="10.044642857142856"/>
+        </scene>
+        <!--ConfigProfile.storyboard-->
+        <scene sceneID="vL4-iu-7cC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ConfigProfile.storyboard" storyboardName="ConfigProfile" referencedIdentifier="ConfigProfile.storyboard" id="qQ5-IG-8U2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cic-3g-Tkx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHC-ZG-COM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="-102"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1Tp-Dl-dRN">

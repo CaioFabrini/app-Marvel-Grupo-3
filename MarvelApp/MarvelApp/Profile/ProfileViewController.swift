@@ -43,6 +43,11 @@ class ProfileViewController: UIViewController {
     
     }
     
+    @IBAction func showSettingsButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "configProfile" , sender: nil)
+        
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         collectionViewItemSize()
