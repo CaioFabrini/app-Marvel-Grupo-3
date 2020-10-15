@@ -9,7 +9,9 @@ import UIKit
 
 class RegisterVC: BaseViewController {
 
+   
     
+    var activeField: UITextField?
     
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
@@ -26,12 +28,13 @@ class RegisterVC: BaseViewController {
         self.configScreen()
         
     
-        
-        
+       
     }
     
     
-    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+            view.endEditing(true)
+    }
     
     func configScreen(){
        
