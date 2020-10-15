@@ -11,7 +11,6 @@
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
 		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
 		04CC03892519719400431213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03872519719400431213 /* Main.storyboard */; };
-		04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */; };
 		04CC038E2519719600431213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CC038D2519719600431213 /* Assets.xcassets */; };
 		04CC03912519719600431213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC038F2519719600431213 /* LaunchScreen.storyboard */; };
 		04CC039C2519719600431213 /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC039B2519719600431213 /* MarvelAppTests.swift */; };
@@ -27,6 +26,7 @@
 		04CC0400251A23F100431213 /* ConfigProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC03FF251A23F100431213 /* ConfigProfile.storyboard */; };
 		04CC040B251AD1F800431213 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040A251AD1F800431213 /* CharacterDetail.storyboard */; };
 		04CC0410251AD20F00431213 /* ComicsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CC040F251AD20F00431213 /* ComicsDetail.storyboard */; };
+		763E5EC8253138E600762290 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763E5EC7253138E600762290 /* ForgotPasswordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04CC03852519719400431213 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		04CC03882519719400431213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04CC038B2519719400431213 /* MarvelApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarvelApp.xcdatamodel; sourceTree = "<group>"; };
 		04CC038D2519719600431213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CC03902519719600431213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CC03922519719600431213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		04CC03FF251A23F100431213 /* ConfigProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfigProfile.storyboard; sourceTree = "<group>"; };
 		04CC040A251AD1F800431213 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		04CC040F251AD20F00431213 /* ComicsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComicsDetail.storyboard; sourceTree = "<group>"; };
+		763E5EC7253138E600762290 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,6 @@
 				04CC03832519719400431213 /* SceneDelegate.swift */,
 				04CC038F2519719600431213 /* LaunchScreen.storyboard */,
 				04CC03922519719600431213 /* Info.plist */,
-				04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";
@@ -182,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				04CC03F9251A238200431213 /* ForgotPassword.storyboard */,
+				763E5EC7253138E600762290 /* ForgotPasswordVC.swift */,
 			);
 			path = "Forgot The Password";
 			sourceTree = "<group>";
@@ -385,9 +385,9 @@
 			files = (
 				04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */,
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
+				763E5EC8253138E600762290 /* ForgotPasswordVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
-				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,19 +715,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		04CC038A2519719400431213 /* MarvelApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				04CC038B2519719400431213 /* MarvelApp.xcdatamodel */,
-			);
-			currentVersion = 04CC038B2519719400431213 /* MarvelApp.xcdatamodel */;
-			path = MarvelApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 04CC03762519719400431213 /* Project object */;
 }
