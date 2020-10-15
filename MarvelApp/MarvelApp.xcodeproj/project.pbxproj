@@ -26,6 +26,7 @@
 		0445860D2538F8790033D559 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */; };
 		044586122538F9A80033D559 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044586112538F9A80033D559 /* HomeVC.swift */; };
 		0445861A253904D70033D559 /* ConfigProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04458619253904D70033D559 /* ConfigProfileVC.swift */; };
+		0445864025390F370033D559 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445863F25390F370033D559 /* ForgotPasswordVC.swift */; };
 		04CC03822519719400431213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03812519719400431213 /* AppDelegate.swift */; };
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
 		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
@@ -92,6 +93,7 @@
 		0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = MarvelApp/ItemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		044586112538F9A80033D559 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		04458619253904D70033D559 /* ConfigProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigProfileVC.swift; sourceTree = "<group>"; };
+		0445863F25390F370033D559 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		04CC037E2519719400431213 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC03812519719400431213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 		04CC03D12519844600431213 /* Forgot The Password */ = {
 			isa = PBXGroup;
 			children = (
+				0445863F25390F370033D559 /* ForgotPasswordVC.swift */,
 				04CC03F9251A238200431213 /* ForgotPassword.storyboard */,
 			);
 			path = "Forgot The Password";
@@ -605,6 +608,7 @@
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				0423F3CD2523B7700083B826 /* BiographyTableViewCell.swift in Sources */,
 				0445860D2538F8790033D559 /* ItemCollectionViewCell.swift in Sources */,
+				0445864025390F370033D559 /* ForgotPasswordVC.swift in Sources */,
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */,
