@@ -20,7 +20,7 @@ class ProfileViewController: UIViewController {
     
     
     @IBOutlet weak var scCharactersComics: UISegmentedControl!
-    
+    var aa = ""
     private var collectionViewFlowLayout: UICollectionViewFlowLayout!
     var segmentedItems:Int = 0
     var items:Int = 0
