@@ -49,12 +49,11 @@ class ForgotPasswordVC: BaseViewController{
     
     
     @IBAction func tappedUpdateButton(_ sender: UIButton) {
-        
+        print("tappedUpdateButton")
     }
     
     @IBAction func showLogin(_ sender: UIButton) {
-        performSegue(withIdentifier:"showLogin", sender: nil)
-        
+        self.dismiss(animated: true, completion: nil)
     }
 
     }
