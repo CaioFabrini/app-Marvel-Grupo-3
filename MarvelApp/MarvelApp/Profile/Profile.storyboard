@@ -12,7 +12,7 @@
         <!--Profile View Controller-->
         <scene sceneID="GpD-tD-wSr">
             <objects>
-                <viewController storyboardIdentifier="ProfileVC" id="ggd-AK-drP" customClass="ProfileViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" modalPresentationStyle="fullScreen" id="ggd-AK-drP" customClass="ProfileViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Wy-QR-Vhg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +83,7 @@
                                 </state>
                                 <connections>
                                     <action selector="showSettingsButton:" destination="ggd-AK-drP" eventType="touchUpInside" id="nZP-wI-Kar"/>
+                                    <segue destination="oHq-Mz-8a4" kind="show" id="TdH-Od-GNk"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tpz-AS-IAH" userLabel="Profile CollectionView " customClass="ProfileViewController">
@@ -129,6 +130,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qU2-00-vJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000" y="13"/>
+        </scene>
+        <!--ConfigProfile-->
+        <scene sceneID="aIe-4H-VyM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ConfigProfile" referencedIdentifier="ConfigProfile" id="oHq-Mz-8a4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lyn-y1-2Nt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJZ-xN-GNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-232"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1Tp-Dl-dRN">

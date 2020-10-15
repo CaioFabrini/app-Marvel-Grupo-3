@@ -25,6 +25,7 @@
 		0445860C2538F8790033D559 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044586092538F8790033D559 /* ItemCollectionViewCell.xib */; };
 		0445860D2538F8790033D559 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */; };
 		044586122538F9A80033D559 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044586112538F9A80033D559 /* HomeVC.swift */; };
+		0445861A253904D70033D559 /* ConfigProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04458619253904D70033D559 /* ConfigProfileVC.swift */; };
 		04CC03822519719400431213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03812519719400431213 /* AppDelegate.swift */; };
 		04CC03842519719400431213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03832519719400431213 /* SceneDelegate.swift */; };
 		04CC03862519719400431213 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03852519719400431213 /* LoginVC.swift */; };
@@ -86,10 +87,11 @@
 		0423F3CC2523B7700083B826 /* BiographyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiographyTableViewCell.xib; sourceTree = "<group>"; };
 		0423F4252523D3620083B826 /* CharacterSpecificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSpecificationTableViewCell.swift; sourceTree = "<group>"; };
 		0423F4262523D3620083B826 /* CharacterSpecificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterSpecificationTableViewCell.xib; sourceTree = "<group>"; };
-		044586082538F8790033D559 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = MarvelApp/Profile/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
-		044586092538F8790033D559 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemCollectionViewCell.xib; path = MarvelApp/Profile/ItemCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
-		0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = MarvelApp/Profile/ItemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		044586082538F8790033D559 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = MarvelApp/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
+		044586092538F8790033D559 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemCollectionViewCell.xib; path = MarvelApp/ItemCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCollectionViewCell.swift; path = MarvelApp/ItemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		044586112538F9A80033D559 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		04458619253904D70033D559 /* ConfigProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigProfileVC.swift; sourceTree = "<group>"; };
 		04CC037E2519719400431213 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CC03812519719400431213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CC03832519719400431213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -281,6 +283,9 @@
 				04CC03E8251A1F2200431213 /* Home */,
 				04CC03DC251A1DF900431213 /* Search */,
 				04CC03DB251A1DC200431213 /* Profile */,
+				0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */,
+				044586092538F8790033D559 /* ItemCollectionViewCell.xib */,
+				044586082538F8790033D559 /* ProfileViewController.swift */,
 				04CC03D5251A186700431213 /* Detail */,
 				04CC03D12519844600431213 /* Forgot The Password */,
 				04CC03C32519835B00431213 /* Register */,
@@ -405,9 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				04CC03FF251A23F100431213 /* ConfigProfile.storyboard */,
-				0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */,
-				044586092538F8790033D559 /* ItemCollectionViewCell.xib */,
-				044586082538F8790033D559 /* ProfileViewController.swift */,
+				04458619253904D70033D559 /* ConfigProfileVC.swift */,
 			);
 			path = "Config Profile";
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				042110C32523FDA90007431D /* SubViewTableViewCell.swift in Sources */,
 				0423F4272523D3620083B826 /* CharacterSpecificationTableViewCell.swift in Sources */,
 				044586122538F9A80033D559 /* HomeVC.swift in Sources */,
+				0445861A253904D70033D559 /* ConfigProfileVC.swift in Sources */,
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 				0412579F25291B250053631B /* HeaderComicsTableViewCell.swift in Sources */,
 				041257832528FF220053631B /* OtherCollectionViewCell.swift in Sources */,
