@@ -41,9 +41,9 @@ extension ComicsDetailVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0{
-        let cell = tableView.dequeueReusableCell(withIdentifier: HeaderComicsTableViewCell.identifier, for: indexPath)
-        
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: HeaderComicsTableViewCell.identifier, for: indexPath) as? HeaderComicsTableViewCell
+            cell?.delegate(delegate: self)
+        return cell ?? UITableViewCell()
         }else if indexPath.row == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: BiographyTableViewCell.identifier, for: indexPath)
             return cell
@@ -61,4 +61,10 @@ extension ComicsDetailVC: UITableViewDelegate, UITableViewDataSource{
     
     
     
+}
+
+extension ComicsDetailVC: BackCaracterProtocol{
+    func backComics() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

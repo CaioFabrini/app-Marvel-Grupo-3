@@ -11,12 +11,44 @@
         <!--Home-->
         <scene sceneID="1NV-jd-91s">
             <objects>
-                <viewController storyboardIdentifier="homeVC" id="aow-rB-hKm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" id="aow-rB-hKm" customClass="HomeVC" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AXH-6u-L4V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo1-Jk-1ZM">
+                                <rect key="frame" x="143" y="191" width="128" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="6jI-W9-rQN"/>
+                                    <constraint firstAttribute="height" constant="48" id="A3p-ZL-BBU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Chacarter"/>
+                                <connections>
+                                    <segue destination="YNI-Nw-x4B" kind="show" id="53f-vl-f7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao0-fQ-1gp">
+                                <rect key="frame" x="157.5" y="389" width="99" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="88Q-Vg-TBO"/>
+                                    <constraint firstAttribute="width" constant="99" id="JzG-1P-gJO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Comics"/>
+                                <connections>
+                                    <segue destination="Y4t-Jm-9rD" kind="show" id="2E0-75-HMS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NKn-B6-njN"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="mo1-Jk-1ZM" firstAttribute="top" secondItem="NKn-B6-njN" secondAttribute="top" constant="147" id="CaH-IP-ZDq"/>
+                            <constraint firstItem="mo1-Jk-1ZM" firstAttribute="centerX" secondItem="NKn-B6-njN" secondAttribute="centerX" id="XJ8-UY-Wzf"/>
+                            <constraint firstItem="Ao0-fQ-1gp" firstAttribute="centerX" secondItem="NKn-B6-njN" secondAttribute="centerX" id="cMI-km-MNz"/>
+                            <constraint firstItem="Ao0-fQ-1gp" firstAttribute="top" secondItem="mo1-Jk-1ZM" secondAttribute="bottom" constant="150" id="jXk-Rb-WnA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="oiO-da-0GV"/>
                 </viewController>
@@ -24,12 +56,33 @@
             </objects>
             <point key="canvasLocation" x="1326.0869565217392" y="146.65178571428569"/>
         </scene>
+        <!--CharacterDetail-->
+        <scene sceneID="STa-6v-tkp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CharacterDetail" referencedIdentifier="CharacterDetail" id="YNI-Nw-x4B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qRP-ob-EK4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSh-LJ-Nvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="0.0"/>
+        </scene>
+        <!--ComicsDetail-->
+        <scene sceneID="VuL-D4-yZu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ComicsDetail" referencedIdentifier="ComicsDetail" id="Y4t-Jm-9rD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zU0-ab-OHu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnQ-70-7z9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="307"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CUZ-kC-UD4">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oUZ-dP-Bhg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PhI-OC-13C">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -43,8 +96,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

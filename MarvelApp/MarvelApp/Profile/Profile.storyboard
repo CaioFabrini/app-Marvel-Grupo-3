@@ -116,13 +116,10 @@
                             <constraint firstItem="Tpz-AS-IAH" firstAttribute="trailing" secondItem="gKn-59-HnG" secondAttribute="trailing" id="vtA-xv-a6k"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="CGd-Or-vyz">
-                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
-                        <imageReference key="landscapeImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="CGd-Or-vyz">
                         <imageReference key="largeContentSizeImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                         <inset key="largeContentSizeImageInsets" minX="-1" minY="1" maxX="0.0" maxY="0.0"/>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="profileCollectionView" destination="Tpz-AS-IAH" id="WHn-o7-qAP"/>
@@ -138,7 +135,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lac-Qa-Pw6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QS5-MZ-1RU">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="QS5-MZ-1RU">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
