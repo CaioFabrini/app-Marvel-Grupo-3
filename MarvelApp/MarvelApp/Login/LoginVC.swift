@@ -34,6 +34,7 @@ class LoginVC: BaseViewController {
         self.passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         
     }
+    
    
     @IBAction func tappedLoginButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "homeTabBar" , sender: nil)
@@ -46,4 +47,39 @@ class LoginVC: BaseViewController {
         self.performSegue(withIdentifier: "ForgotPassword", sender: nil)
     }
 }
+
+extension String{
+    public enum ValidType{
+        case username
+        case password
+    }
+    enum Regex: String{
+        case username = ".{6}"
+        case password = ".{8}"
+    }
+    func isValid(validType: ValidType) -> Bool{
+        let format = "SELF MATCHES %@"
+        var regex = ""
+        
+        switch validType{
+        case .username:
+            regex = Regex.username.rawValue
+        case .password:
+            regex = Regex.password.rawValue
+            
+        }
+        return NSPredicate(format: format,regex).evaluate(with: self)
+}
+}
+func isValidField(textField: UITextField, type: String.ValidType) -> Bool{
+    let TextFieldType: String.ValidType = type
+    guard let text = textField.text else{
+        return false}
+    if text.isValid (validType: TextFieldType) && !text.isEmpty{
+        return true
+    }
+    return false
+}
+
+
 
