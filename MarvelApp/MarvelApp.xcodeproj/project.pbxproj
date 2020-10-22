@@ -54,7 +54,6 @@
 		04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */; };
 		04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */; };
 		04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906DD25212149006D28C7 /* DetailExpationImg.swift */; };
-		825844BF254242A300A1CCB2 /* UIController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825844BE254242A300A1CCB2 /* UIController + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,7 +127,6 @@
 		04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D906DD25212149006D28C7 /* DetailExpationImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpationImg.swift; sourceTree = "<group>"; };
-		825844BE254242A300A1CCB2 /* UIController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIController + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,7 +431,6 @@
 			isa = PBXGroup;
 			children = (
 				04D906C8252111F2006D28C7 /* UIView + Extension.swift */,
-				825844BE254242A300A1CCB2 /* UIController + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -608,7 +605,6 @@
 				04D906A82520E1E6006D28C7 /* HeaderTableViewCell.swift in Sources */,
 				04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */,
 				04125797252919470053631B /* ComicsDetailVC.swift in Sources */,
-				825844BF254242A300A1CCB2 /* UIController + Extension.swift in Sources */,
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
 				0423F3CD2523B7700083B826 /* BiographyTableViewCell.swift in Sources */,
 				0445860D2538F8790033D559 /* ItemCollectionViewCell.swift in Sources */,
