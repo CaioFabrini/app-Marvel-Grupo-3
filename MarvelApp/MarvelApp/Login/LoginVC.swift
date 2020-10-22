@@ -18,6 +18,7 @@ class LoginVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
         self.configScreen()
         
     }
