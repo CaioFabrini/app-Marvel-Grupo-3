@@ -76,5 +76,20 @@ class RegisterVC: BaseViewController {
     }
     
  
-    
+    func textFieldDidBeginEditing(textField: UITextField) {
+            self.animateViewMoving(up: true, moveValue: 100)
+    }
+    func textFieldDidEndEditing(textField: UITextField) {
+            self.animateViewMoving(up: false, moveValue: 100)
+    }
+
+    func animateViewMoving (up:Bool, moveValue :CGFloat){
+        var movementDuration:TimeInterval = 0.3
+        var movement:CGFloat = ( up ? -moveValue : moveValue)
+        UIView.beginAnimations( "animateView", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(movementDuration )
+        self.view.frame = self.view.frame.offsetBy(dx: 0,  dy: movement)
+        UIView.commitAnimations()
+    }
 }
