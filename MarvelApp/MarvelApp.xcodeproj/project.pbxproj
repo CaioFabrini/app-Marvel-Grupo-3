@@ -54,6 +54,8 @@
 		04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */; };
 		04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */; };
 		04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906DD25212149006D28C7 /* DetailExpationImg.swift */; };
+		515220E22542560F00FACCB0 /* AccountSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515220E12542560F00FACCB0 /* AccountSettingsVC.swift */; };
+		515220F12544B18D00FACCB0 /* AccountSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515220F02544B18D00FACCB0 /* AccountSettings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D906DD25212149006D28C7 /* DetailExpationImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpationImg.swift; sourceTree = "<group>"; };
+		515220E12542560F00FACCB0 /* AccountSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsVC.swift; sourceTree = "<group>"; };
+		515220F02544B18D00FACCB0 /* AccountSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountSettings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				04CC03FE251A23D300431213 /* Config Profile */,
+				515220EF2544B15700FACCB0 /* Account Settings */,
 				04CC03F3251A1FA100431213 /* Profile.storyboard */,
 			);
 			path = Profile;
@@ -451,6 +456,15 @@
 				04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		515220EF2544B15700FACCB0 /* Account Settings */ = {
+			isa = PBXGroup;
+			children = (
+				515220F02544B18D00FACCB0 /* AccountSettings.storyboard */,
+				515220E12542560F00FACCB0 /* AccountSettingsVC.swift */,
+			);
+			path = "Account Settings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +589,7 @@
 				04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */,
 				04CC03892519719400431213 /* Main.storyboard in Resources */,
 				042110C42523FDA90007431D /* SubViewTableViewCell.xib in Resources */,
+				515220F12544B18D00FACCB0 /* AccountSettings.storyboard in Resources */,
 				04CC03CD251983B300431213 /* Register.storyboard in Resources */,
 				0423F4282523D3620083B826 /* CharacterSpecificationTableViewCell.xib in Resources */,
 				041257A025291B250053631B /* HeaderComicsTableViewCell.xib in Resources */,
@@ -616,6 +631,7 @@
 				0445860B2538F8790033D559 /* ProfileViewController.swift in Sources */,
 				0412578D2528FF3E0053631B /* OtherTableViewCell.swift in Sources */,
 				04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */,
+				515220E22542560F00FACCB0 /* AccountSettingsVC.swift in Sources */,
 				042110C32523FDA90007431D /* SubViewTableViewCell.swift in Sources */,
 				0423F4272523D3620083B826 /* CharacterSpecificationTableViewCell.swift in Sources */,
 				044586122538F9A80033D559 /* HomeVC.swift in Sources */,

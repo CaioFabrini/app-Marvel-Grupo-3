@@ -84,7 +84,8 @@
                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rf6-1k-ZHz" kind="show" id="yHj-ae-7IB"/>
+                                    <action selector="AccountSettingButton:" destination="7jf-Zw-THm" eventType="touchUpInside" id="C1M-uL-RAQ"/>
+                                    <segue destination="Wts-MP-3bb" kind="show" identifier="AccountSettingsSegue" id="fZn-Kf-oP8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,102 +114,20 @@
             </objects>
             <point key="canvasLocation" x="444.92753623188412" y="168.75"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="SZP-yo-cMk">
+        <!--AccountSettings-->
+        <scene sceneID="tSN-eY-4CR">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="rf6-1k-ZHz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aH1-zu-TFh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erq-os-Wqs">
-                                <rect key="frame" x="136" y="56" width="142" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Nzl-yM-22s"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sam-Sd-7AT">
-                                <rect key="frame" x="36" y="55" width="15" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal">
-                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7jf-Zw-THm" kind="show" id="p6q-bQ-6J8"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usernname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIj-9t-DAJ">
-                                <rect key="frame" x="36" y="98" width="140" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="hBc-be-UxX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@stanlee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzG-dw-71t">
-                                <rect key="frame" x="36" y="136" width="140" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="LyR-V5-z6d"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bq0-nj-k1b">
-                                <rect key="frame" x="36" y="181" width="140" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="kTm-gI-UdK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stanlee@hotmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-BC-Bbi">
-                                <rect key="frame" x="36" y="219" width="328" height="20"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="se8-0e-AER"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="yIj-9t-DAJ" firstAttribute="leading" secondItem="se8-0e-AER" secondAttribute="leading" constant="36" id="0OJ-oV-nGF"/>
-                            <constraint firstItem="UiC-BC-Bbi" firstAttribute="top" secondItem="Bq0-nj-k1b" secondAttribute="bottom" constant="18" id="DJS-Kg-aso"/>
-                            <constraint firstItem="sam-Sd-7AT" firstAttribute="top" secondItem="se8-0e-AER" secondAttribute="top" constant="11" id="H1P-af-wjI"/>
-                            <constraint firstItem="se8-0e-AER" firstAttribute="trailing" secondItem="UiC-BC-Bbi" secondAttribute="trailing" constant="50" id="LKw-Ma-XKt"/>
-                            <constraint firstItem="zzG-dw-71t" firstAttribute="leading" secondItem="se8-0e-AER" secondAttribute="leading" constant="36" id="Lv8-Nr-ExB"/>
-                            <constraint firstItem="Bq0-nj-k1b" firstAttribute="top" secondItem="zzG-dw-71t" secondAttribute="bottom" constant="25" id="OYb-xB-c2y"/>
-                            <constraint firstItem="sam-Sd-7AT" firstAttribute="leading" secondItem="se8-0e-AER" secondAttribute="leading" constant="36" id="SKs-yy-iAG"/>
-                            <constraint firstItem="zzG-dw-71t" firstAttribute="top" secondItem="yIj-9t-DAJ" secondAttribute="bottom" constant="18" id="Y0p-Z3-8aY"/>
-                            <constraint firstItem="UiC-BC-Bbi" firstAttribute="leading" secondItem="se8-0e-AER" secondAttribute="leading" constant="36" id="ZTI-CZ-OOY"/>
-                            <constraint firstItem="erq-os-Wqs" firstAttribute="top" secondItem="se8-0e-AER" secondAttribute="top" constant="12" id="drX-Do-uDR"/>
-                            <constraint firstItem="yIj-9t-DAJ" firstAttribute="top" secondItem="sam-Sd-7AT" secondAttribute="bottom" constant="21" id="rvM-3H-B6a"/>
-                            <constraint firstItem="Bq0-nj-k1b" firstAttribute="leading" secondItem="se8-0e-AER" secondAttribute="leading" constant="36" id="wh3-3i-8BH"/>
-                            <constraint firstItem="erq-os-Wqs" firstAttribute="centerX" secondItem="se8-0e-AER" secondAttribute="centerX" id="x8X-5M-GBU"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="fyl-yi-2ZV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t5O-4j-4yn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AccountSettings" referencedIdentifier="AccountSettings" id="Wts-MP-3bb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Avh-Po-az6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRR-hb-M5q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="169"/>
+            <point key="canvasLocation" x="1249" y="-18"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yHj-ae-7IB"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
