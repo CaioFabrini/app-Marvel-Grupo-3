@@ -38,7 +38,18 @@ class LoginVC: BaseViewController {
     
    
     @IBAction func tappedLoginButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "homeTabBar" , sender: nil)
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        if  username?.count ?? 0 >= 6 && password?.count ?? 0 >= 6{
+            self.performSegue(withIdentifier: "homeTabBar" , sender: nil)
+        }else{
+            let alert = UIAlertController(title: "Erro", message: "Dados incorretos", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(okButton)
+            present(alert, animated: true, completion: nil)
+        }
+        //check(login: usernameTextField.text, password: passwordTextField.text)
+        
     }
     
     @IBAction func tappedSignUpButton(_ sender: UIButton) {
@@ -49,38 +60,40 @@ class LoginVC: BaseViewController {
     }
 }
 
-extension String{
-    public enum ValidType{
-        case username
-        case password
-    }
-    enum Regex: String{
-        case username = ".{6}"
-        case password = ".{8}"
-    }
-    func isValid(validType: ValidType) -> Bool{
-        let format = "SELF MATCHES %@"
-        var regex = ""
-        
-        switch validType{
-        case .username:
-            regex = Regex.username.rawValue
-        case .password:
-            regex = Regex.password.rawValue
-            
-        }
-        return NSPredicate(format: format,regex).evaluate(with: self)
-}
-}
-func isValidField(textField: UITextField, type: String.ValidType) -> Bool{
-    let TextFieldType: String.ValidType = type
-    guard let text = textField.text else{
-        return false}
-    if text.isValid (validType: TextFieldType) && !text.isEmpty{
-        return true
-    }
-    return false
-}
+
+
+//extension String{
+//    public enum ValidType{
+//        case username
+//        case password
+//    }
+//    enum Regex: String{
+//        case username = ".{7}"
+//        case password = ".{8}"
+//    }
+//    func isValid(validType: ValidType) -> Bool{
+//        let format = "SELF MATCHES %@"
+//        var regex = ""
+//
+//        switch validType{
+//        case .username:
+//            regex = Regex.username.rawValue
+//        case .password:
+//            regex = Regex.password.rawValue
+//
+//        }
+//        return NSPredicate(format: format,regex).evaluate(with: self)
+//}
+//}
+//func isValidField(textField: UITextField, type: String.ValidType) -> Bool{
+//    let TextFieldType: String.ValidType = type
+//    guard let text = textField.text else{
+//        return false}
+//    if text.isValid (validType: TextFieldType) && !text.isEmpty{
+//        return true
+//    }
+//    return false
+//}
 
 
 
