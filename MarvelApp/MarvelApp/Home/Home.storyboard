@@ -2,9 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,14 +41,45 @@
                                     <segue destination="Y4t-Jm-9rD" kind="show" id="2E0-75-HMS"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rfI-zZ-msw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0k3-Ns-k5y">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="onz-2E-1Zq">
+                                    <rect key="frame" x="0.0" y="-44" width="414" height="813"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="N8t-xz-1iP">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Zm-ED-Zij">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NKn-B6-njN"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="rfI-zZ-msw" firstAttribute="trailing" secondItem="NKn-B6-njN" secondAttribute="trailing" id="36X-mj-ZGm"/>
                             <constraint firstItem="mo1-Jk-1ZM" firstAttribute="top" secondItem="NKn-B6-njN" secondAttribute="top" constant="147" id="CaH-IP-ZDq"/>
+                            <constraint firstItem="rfI-zZ-msw" firstAttribute="top" secondItem="AXH-6u-L4V" secondAttribute="top" id="GYp-1U-wR6"/>
+                            <constraint firstItem="rfI-zZ-msw" firstAttribute="bottom" secondItem="NKn-B6-njN" secondAttribute="bottom" id="SfF-ZM-PrV"/>
                             <constraint firstItem="mo1-Jk-1ZM" firstAttribute="centerX" secondItem="NKn-B6-njN" secondAttribute="centerX" id="XJ8-UY-Wzf"/>
                             <constraint firstItem="Ao0-fQ-1gp" firstAttribute="centerX" secondItem="NKn-B6-njN" secondAttribute="centerX" id="cMI-km-MNz"/>
                             <constraint firstItem="Ao0-fQ-1gp" firstAttribute="top" secondItem="mo1-Jk-1ZM" secondAttribute="bottom" constant="150" id="jXk-Rb-WnA"/>
+                            <constraint firstItem="rfI-zZ-msw" firstAttribute="leading" secondItem="NKn-B6-njN" secondAttribute="leading" id="vmY-uY-gTE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="oiO-da-0GV"/>
@@ -96,6 +128,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
