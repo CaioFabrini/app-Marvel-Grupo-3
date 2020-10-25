@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -117,10 +117,13 @@
                             <constraint firstItem="Tpz-AS-IAH" firstAttribute="trailing" secondItem="gKn-59-HnG" secondAttribute="trailing" id="vtA-xv-a6k"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="CGd-Or-vyz">
-                        <imageReference key="largeContentSizeImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                    <tabBarItem key="tabBarItem" title="" image="iconSpiderMan4-1" landscapeImage="iconSpiderMan4-1" badgeValue="Perfil" id="CGd-Or-vyz">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="5"/>
+                        <imageReference key="largeContentSizeImage" image="iconSpiderMan4-1" symbolScale="large" renderingMode="original"/>
                         <inset key="largeContentSizeImageInsets" minX="-1" minY="1" maxX="0.0" maxY="0.0"/>
-                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                        <imageReference key="selectedImage" image="iconSpiderMan4-1" symbolScale="large" renderingMode="original"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="profileCollectionView" destination="Tpz-AS-IAH" id="WHn-o7-qAP"/>
@@ -163,7 +166,8 @@
     <resources>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="iconSpiderMan4-1" width="64" height="64"/>
+        <image name="iconSpiderMan4-1" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
