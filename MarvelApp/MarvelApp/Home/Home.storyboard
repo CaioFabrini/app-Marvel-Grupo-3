@@ -41,27 +41,20 @@
                                     <segue destination="Y4t-Jm-9rD" kind="show" id="2E0-75-HMS"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rfI-zZ-msw">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="trd-hd-Awg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0k3-Ns-k5y">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ch6-gY-b3k">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="onz-2E-1Zq">
-                                    <rect key="frame" x="0.0" y="-44" width="414" height="813"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="N8t-xz-1iP">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="sk7-sH-0km">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Zm-ED-Zij">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CfQ-ad-x0i">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
@@ -72,17 +65,20 @@
                         <viewLayoutGuide key="safeArea" id="NKn-B6-njN"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="rfI-zZ-msw" firstAttribute="trailing" secondItem="NKn-B6-njN" secondAttribute="trailing" id="36X-mj-ZGm"/>
+                            <constraint firstItem="trd-hd-Awg" firstAttribute="top" secondItem="AXH-6u-L4V" secondAttribute="top" id="1bD-41-3FF"/>
                             <constraint firstItem="mo1-Jk-1ZM" firstAttribute="top" secondItem="NKn-B6-njN" secondAttribute="top" constant="147" id="CaH-IP-ZDq"/>
-                            <constraint firstItem="rfI-zZ-msw" firstAttribute="top" secondItem="AXH-6u-L4V" secondAttribute="top" id="GYp-1U-wR6"/>
-                            <constraint firstItem="rfI-zZ-msw" firstAttribute="bottom" secondItem="NKn-B6-njN" secondAttribute="bottom" id="SfF-ZM-PrV"/>
+                            <constraint firstItem="trd-hd-Awg" firstAttribute="trailing" secondItem="NKn-B6-njN" secondAttribute="trailing" id="NMd-7S-Zgn"/>
                             <constraint firstItem="mo1-Jk-1ZM" firstAttribute="centerX" secondItem="NKn-B6-njN" secondAttribute="centerX" id="XJ8-UY-Wzf"/>
                             <constraint firstItem="Ao0-fQ-1gp" firstAttribute="centerX" secondItem="NKn-B6-njN" secondAttribute="centerX" id="cMI-km-MNz"/>
+                            <constraint firstItem="trd-hd-Awg" firstAttribute="bottom" secondItem="NKn-B6-njN" secondAttribute="bottom" id="ewP-Bc-0nl"/>
                             <constraint firstItem="Ao0-fQ-1gp" firstAttribute="top" secondItem="mo1-Jk-1ZM" secondAttribute="bottom" constant="150" id="jXk-Rb-WnA"/>
-                            <constraint firstItem="rfI-zZ-msw" firstAttribute="leading" secondItem="NKn-B6-njN" secondAttribute="leading" id="vmY-uY-gTE"/>
+                            <constraint firstItem="trd-hd-Awg" firstAttribute="leading" secondItem="NKn-B6-njN" secondAttribute="leading" id="yWN-Ei-SYx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="oiO-da-0GV"/>
+                    <connections>
+                        <outlet property="HomeCollectionView" destination="trd-hd-Awg" id="hz3-Y3-PIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJS-Ky-zyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
