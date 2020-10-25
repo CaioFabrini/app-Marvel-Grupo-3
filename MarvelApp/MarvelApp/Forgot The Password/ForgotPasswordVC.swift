@@ -44,6 +44,9 @@ class ForgotPasswordVC: BaseViewController{
         self.cpfTextField.layer.masksToBounds = true
         self.passwordTextField.layer.masksToBounds = true
         self.confirmPasswordTextField.layer.masksToBounds = true
+        self.cpfTextField.attributedPlaceholder = NSAttributedString(string: "CPF", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        self.passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        self.confirmPasswordTextField.attributedPlaceholder = NSAttributedString(string: "Confirm Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
     
     }
     
