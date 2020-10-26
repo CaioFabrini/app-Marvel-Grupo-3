@@ -54,6 +54,7 @@
 		04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */; };
 		04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */; };
 		04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906DD25212149006D28C7 /* DetailExpationImg.swift */; };
+		A74AD27325464748006C6FAE /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD27225464748006C6FAE /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D906DD25212149006D28C7 /* DetailExpationImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpationImg.swift; sourceTree = "<group>"; };
+		A74AD27225464748006C6FAE /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				04CC03EE251A1F6100431213 /* Search.storyboard */,
+				A74AD27225464748006C6FAE /* Search.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -623,6 +626,7 @@
 				04CC03842519719400431213 /* SceneDelegate.swift in Sources */,
 				0412579F25291B250053631B /* HeaderComicsTableViewCell.swift in Sources */,
 				041257832528FF220053631B /* OtherCollectionViewCell.swift in Sources */,
+				A74AD27325464748006C6FAE /* Search.swift in Sources */,
 				04D906C9252111F2006D28C7 /* UIView + Extension.swift in Sources */,
 				04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */,
 			);
