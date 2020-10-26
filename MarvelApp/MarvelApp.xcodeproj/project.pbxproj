@@ -53,7 +53,6 @@
 		04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */; };
 		04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */; };
 		04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906DD25212149006D28C7 /* DetailExpationImg.swift */; };
-		765942632545429A009470BC /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765942622545429A009470BC /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,7 +125,6 @@
 		04D906CF25211576006D28C7 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D906DD25212149006D28C7 /* DetailExpationImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpationImg.swift; sourceTree = "<group>"; };
-		765942622545429A009470BC /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,7 +286,6 @@
 				0445860A2538F8790033D559 /* ItemCollectionViewCell.swift */,
 				044586092538F8790033D559 /* ItemCollectionViewCell.xib */,
 				044586082538F8790033D559 /* ProfileViewController.swift */,
-				765942622545429A009470BC /* CustomSegmentedControl.swift */,
 				04CC03D5251A186700431213 /* Detail */,
 				04CC03D12519844600431213 /* Forgot The Password */,
 				04CC03C32519835B00431213 /* Register */,
@@ -611,7 +608,6 @@
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */,
-				765942632545429A009470BC /* CustomSegmentedControl.swift in Sources */,
 				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				0445860B2538F8790033D559 /* ProfileViewController.swift in Sources */,
 				0412578D2528FF3E0053631B /* OtherTableViewCell.swift in Sources */,
