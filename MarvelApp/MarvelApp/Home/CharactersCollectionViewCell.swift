@@ -9,9 +9,10 @@ import UIKit
 
 class CharactersCollectionViewCell: UICollectionViewCell {
    
-    @IBOutlet weak var LblNome: UILabel!
+
     @IBOutlet weak var Charecter: UIImageView!
     
+    @IBOutlet weak var label: UILabel!
     
     var name = ""
     override func awakeFromNib() {
@@ -19,7 +20,7 @@ class CharactersCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     func setupCell(Herois : Herois){
-        self.LblNome.text = Herois.nome
+        self.label.text = Herois.nome
         self.Charecter.image = UIImage(named: Herois.image )
     }
     }
