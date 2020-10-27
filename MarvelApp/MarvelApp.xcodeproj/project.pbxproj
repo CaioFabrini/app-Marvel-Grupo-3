@@ -55,6 +55,9 @@
 		04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */; };
 		04D906DE25212149006D28C7 /* DetailExpationImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D906DD25212149006D28C7 /* DetailExpationImg.swift */; };
 		A74AD27325464748006C6FAE /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD27225464748006C6FAE /* Search.swift */; };
+		A74AD27D254750C0006C6FAE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD27C254750C0006C6FAE /* Model.swift */; };
+		A74AD28625475934006C6FAE /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD28425475934006C6FAE /* CharactersCollectionViewCell.swift */; };
+		A74AD28725475934006C6FAE /* CharactersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A74AD28525475934006C6FAE /* CharactersCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,9 @@
 		04D906D025211576006D28C7 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		04D906DD25212149006D28C7 /* DetailExpationImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpationImg.swift; sourceTree = "<group>"; };
 		A74AD27225464748006C6FAE /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		A74AD27C254750C0006C6FAE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A74AD28425475934006C6FAE /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
+		A74AD28525475934006C6FAE /* CharactersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,7 +404,10 @@
 			isa = PBXGroup;
 			children = (
 				04CC03EE251A1F6100431213 /* Search.storyboard */,
+				A74AD27C254750C0006C6FAE /* Model.swift */,
 				A74AD27225464748006C6FAE /* Search.swift */,
+				A74AD28425475934006C6FAE /* CharactersCollectionViewCell.swift */,
+				A74AD28525475934006C6FAE /* CharactersCollectionViewCell.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -574,6 +583,7 @@
 				04CC03FA251A238200431213 /* ForgotPassword.storyboard in Resources */,
 				04CC03EA251A1F3500431213 /* Home.storyboard in Resources */,
 				04D906A92520E1E6006D28C7 /* HeaderTableViewCell.xib in Resources */,
+				A74AD28725475934006C6FAE /* CharactersCollectionViewCell.xib in Resources */,
 				04CC03EF251A1F6100431213 /* Search.storyboard in Resources */,
 				04D906D225211576006D28C7 /* HeaderCollectionViewCell.xib in Resources */,
 				04CC03892519719400431213 /* Main.storyboard in Resources */,
@@ -615,11 +625,13 @@
 				04CC03822519719400431213 /* AppDelegate.swift in Sources */,
 				04CC03C52519838800431213 /* RegisterVC.swift in Sources */,
 				04D906A12520D716006D28C7 /* CharacterDetailVC.swift in Sources */,
+				A74AD27D254750C0006C6FAE /* Model.swift in Sources */,
 				04CC038C2519719400431213 /* MarvelApp.xcdatamodeld in Sources */,
 				0445860B2538F8790033D559 /* ProfileViewController.swift in Sources */,
 				0412578D2528FF3E0053631B /* OtherTableViewCell.swift in Sources */,
 				04D906D125211576006D28C7 /* HeaderCollectionViewCell.swift in Sources */,
 				042110C32523FDA90007431D /* SubViewTableViewCell.swift in Sources */,
+				A74AD28625475934006C6FAE /* CharactersCollectionViewCell.swift in Sources */,
 				0423F4272523D3620083B826 /* CharacterSpecificationTableViewCell.swift in Sources */,
 				044586122538F9A80033D559 /* HomeVC.swift in Sources */,
 				0445861A253904D70033D559 /* ConfigProfileVC.swift in Sources */,
