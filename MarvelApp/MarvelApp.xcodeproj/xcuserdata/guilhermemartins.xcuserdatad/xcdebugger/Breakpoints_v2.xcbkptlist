@@ -14,10 +14,10 @@
             filePath = "MarvelApp/Login/LoginVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "isLoginValid(login:)"
-            landmarkType = "9">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "8A62FF7B-DE9E-450B-8426-EEBEE6C16843 - ad00d39d407333d6"
@@ -62,10 +62,10 @@
             filePath = "MarvelApp/Login/LoginVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "isLoginValid(login:)"
-            landmarkType = "9">
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "5F167ED2-5E9A-417F-9B4A-6B3DBD03323D - ad00d39d407333d6"

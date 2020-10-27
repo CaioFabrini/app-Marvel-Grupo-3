@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginVC: BaseViewController {
-
+    
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
@@ -18,11 +18,11 @@ class LoginVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.hideKeyboardWhenTappedAround()
         self.configScreen()
         
     }
-
+    
     func configScreen(){
         self.loginButton.layer.cornerRadius = 30
         self.loginButton.layer.borderWidth = 3
@@ -36,11 +36,13 @@ class LoginVC: BaseViewController {
         
     }
     
-   
+    
     @IBAction func tappedLoginButton(_ sender: UIButton) {
-        let username = usernameTextField.text
+        
         let password = passwordTextField.text
-        if  username?.count ?? 0 >= 6 && password?.count ?? 0 >= 6{
+        
+        if  password?.count ?? 0 >= 6 && self.usernameTextField.text != ""{
+            
             self.performSegue(withIdentifier: "homeTabBar" , sender: nil)
         }else{
             let alert = UIAlertController(title: "Erro", message: "Dados incorretos", preferredStyle: .alert)
@@ -61,39 +63,6 @@ class LoginVC: BaseViewController {
 }
 
 
-
-//extension String{
-//    public enum ValidType{
-//        case username
-//        case password
-//    }
-//    enum Regex: String{
-//        case username = ".{7}"
-//        case password = ".{8}"
-//    }
-//    func isValid(validType: ValidType) -> Bool{
-//        let format = "SELF MATCHES %@"
-//        var regex = ""
-//
-//        switch validType{
-//        case .username:
-//            regex = Regex.username.rawValue
-//        case .password:
-//            regex = Regex.password.rawValue
-//
-//        }
-//        return NSPredicate(format: format,regex).evaluate(with: self)
-//}
-//}
-//func isValidField(textField: UITextField, type: String.ValidType) -> Bool{
-//    let TextFieldType: String.ValidType = type
-//    guard let text = textField.text else{
-//        return false}
-//    if text.isValid (validType: TextFieldType) && !text.isEmpty{
-//        return true
-//    }
-//    return false
-//}
 
 
 
