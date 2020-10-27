@@ -84,7 +84,7 @@ extension Search: UICollectionViewDelegate , UICollectionViewDataSource{
 }
 extension Search: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    //    arraySearch = arraySearchName.filter({$0.prefix(searchText.count) == searchText.lowercased()})
+    //    arraySearch = arraySearchName.filter({$0.nome == searchText.lowercased()})
         searching = true
         SearchCollectionView.reloadData()
     }
