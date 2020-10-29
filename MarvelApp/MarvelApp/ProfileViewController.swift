@@ -41,6 +41,8 @@ class ProfileViewController: UIViewController {
         
         super.viewDidLoad()
         setupCollectionView()
+        configScreen()
+
     
     }
     
@@ -52,15 +54,25 @@ class ProfileViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         collectionViewItemSize()
+
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
         self.profileCollectionView.reloadData()
-        
+
     }
     
+    func configScreen(){
+       
+        scCharactersComics.clipsToBounds = true
+        self.scCharactersComics.layer.cornerRadius = 100
+        self.scCharactersComics.layer.borderWidth = 2
+        self.scCharactersComics.layer.borderColor = UIColor.black.cgColor
+    }
+
 
     func setupCollectionView(){
         
@@ -91,7 +103,9 @@ class ProfileViewController: UIViewController {
         collectionViewFlowLayout.minimumInteritemSpacing = internItemSpacing
         profileCollectionView.setCollectionViewLayout(collectionViewFlowLayout, animated: true)
         }
+            
     }
+    
 
     @IBAction func changeCollectionView(_ sender: UISegmentedControl) {
         
@@ -107,7 +121,9 @@ class ProfileViewController: UIViewController {
         profileCollectionView.reloadData()
 
     }
+    
 }
+
 
 extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -134,4 +150,7 @@ extension ProfileViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
 }
+
+
+
 
