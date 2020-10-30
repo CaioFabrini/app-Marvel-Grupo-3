@@ -27,6 +27,8 @@ class RegisterVC: BaseViewController {
 
         self.configScreen()
         
+        
+        
     
        
     }
@@ -75,6 +77,8 @@ class RegisterVC: BaseViewController {
         dismiss(animated: true, completion: nil)
     }
     
- 
+    func validityType() {
+        let _: String.ValidType = .email
+    }
     
 }
