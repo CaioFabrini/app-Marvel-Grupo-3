@@ -9,13 +9,8 @@ import UIKit
 
 class Search :UIViewController {
     
-   
+    @IBOutlet weak var SearchBar: UISearchBar!
     
-    @IBOutlet var SearchBar: UISearchBar!
-    
-    
-    
-   
     
     var arraySearch = [String]()
     var searching = false
@@ -24,20 +19,17 @@ class Search :UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        
-        
-       
-    }
-        func characterButon(_ sender: Any) {
-            func prepare( for segue: UIStoryboardSegue, sender: AnyObject?){
-               SearchBar.resignFirstResponder()
-               let  vc = segue.destination as! CollectionSearch
-               vc.name = SearchBar.text
-            
-       }
+        func prepare( for segue: UIStoryboardSegue, sender: AnyObject?){
+           SearchBar.resignFirstResponder()
+           let  vc = segue.destination as! CollectionSearch
+           vc.name = SearchBar.text
+   }
+                
     }
     
+    @IBAction func CharacterButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "result", sender: nil)
+    }
     @IBAction func ComicButton(_ sender: Any) {
     }
 }
@@ -67,11 +59,11 @@ class Search :UIViewController {
 //
 //    }
 //}
-extension Search: UISearchBarDelegate{
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    //    arraySearch = arraySearchName.filter({$0.nome == searchText.lowercased()})
-        searching = true
-    //    SearchCollectionView.reloadData()
-    }
-}
+//extension Search: UISearchBarDelegate{
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//    //    arraySearch = arraySearchName.filter({$0.nome == searchText.lowercased()})
+//        searching = true
+//    //    SearchCollectionView.reloadData()
+//    }
+//}
 

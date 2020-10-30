@@ -25,6 +25,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="CharacterButton:" destination="6wp-SH-KDe" eventType="touchUpInside" id="dnD-L6-O2c"/>
                                     <action selector="characterButon:" destination="6wp-SH-KDe" eventType="touchUpInside" id="L6Z-Om-omA"/>
                                 </connections>
                             </button>
@@ -51,6 +52,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="SuD-24-5ax"/>
                     <connections>
+                        <outlet property="SearchBar" destination="MCS-LV-soO" id="2Zv-bv-Fb9"/>
                         <segue destination="Zcu-Cu-5QD" kind="show" identifier="result" id="QJ6-Hm-YYy"/>
                     </connections>
                 </viewController>
