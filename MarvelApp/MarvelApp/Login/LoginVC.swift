@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginVC: BaseViewController {
-
+    
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
@@ -18,10 +18,11 @@ class LoginVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
         self.configScreen()
         
     }
-
+    
     func configScreen(){
         self.loginButton.layer.cornerRadius = 30
         self.loginButton.layer.borderWidth = 3
@@ -34,9 +35,23 @@ class LoginVC: BaseViewController {
         self.passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
         
     }
-   
+    
+    
     @IBAction func tappedLoginButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "homeTabBar" , sender: nil)
+        
+        let password = passwordTextField.text
+        
+        if  password?.count ?? 0 >= 6 && self.usernameTextField.text != ""{
+            
+            self.performSegue(withIdentifier: "homeTabBar" , sender: nil)
+        }else{
+            let alert = UIAlertController(title: "Erro", message: "Dados incorretos", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(okButton)
+            present(alert, animated: true, completion: nil)
+        }
+        //check(login: usernameTextField.text, password: passwordTextField.text)
+        
     }
     
     @IBAction func tappedSignUpButton(_ sender: UIButton) {
@@ -46,4 +61,8 @@ class LoginVC: BaseViewController {
         self.performSegue(withIdentifier: "ForgotPassword", sender: nil)
     }
 }
+
+
+
+
 
