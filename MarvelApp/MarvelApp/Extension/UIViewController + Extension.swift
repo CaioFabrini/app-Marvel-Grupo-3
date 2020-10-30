@@ -35,7 +35,7 @@ extension String {
     func isValid( validityType: ValidType) -> Bool{
         let format = "SELF MATCHES %@"
         var regex = ""
-        
+        var nome = "guilherme"
         switch validityType {
         case .email:
             regex = Regex.email.rawValue
@@ -44,7 +44,7 @@ extension String {
         
         return NSPredicate(format: format, regex).evaluate(with: self)
         }
-    
+        
     
         var isCPF: Bool {
             let numbers = self.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
