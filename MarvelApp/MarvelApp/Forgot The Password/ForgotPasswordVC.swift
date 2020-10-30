@@ -8,7 +8,7 @@
 import UIKit
 
 class ForgotPasswordVC: BaseViewController{
-    //commit: Criei as IBOutlets da tela e actions
+    
     
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -32,7 +32,7 @@ class ForgotPasswordVC: BaseViewController{
         
     }
     
-    // commit: arredondei os textfields e botões
+    
     func configScreen(){
         
         self.updateButton.layer.cornerRadius = 25
