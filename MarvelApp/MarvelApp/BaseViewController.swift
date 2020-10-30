@@ -14,4 +14,38 @@ class BaseViewController: UIViewController {
 
       
     }
+    
+    func isValidField(textField: UITextField, type: String.ValidType ) -> Bool {
+
+            let textFieldType: String.ValidType = type
+            guard let text = textField.text else {return false}
+        if type == .email || type == .password{
+            if text.isValid(validType: textFieldType) && !text.isEmpty {
+                return true
+            }
+            return false
+        }else{
+            switch type {
+            case .username:
+                if textField.text == ""{
+                    return false
+                }else{
+                    
+                    return true
+                }
+               break
+            case  .cpf:
+                if textField.text == ""{
+                    return false
+                }else{
+                    
+                   return true
+                }
+                break
+            default:
+                break
+            }
+        }
+        return false
+        }
 }
