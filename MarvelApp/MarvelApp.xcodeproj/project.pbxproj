@@ -58,6 +58,7 @@
 		A74AD27D254750C0006C6FAE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD27C254750C0006C6FAE /* Model.swift */; };
 		A74AD28625475934006C6FAE /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD28425475934006C6FAE /* CharactersCollectionViewCell.swift */; };
 		A74AD28725475934006C6FAE /* CharactersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A74AD28525475934006C6FAE /* CharactersCollectionViewCell.xib */; };
+		A74AD298254B4120006C6FAE /* CollectionSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74AD297254B4120006C6FAE /* CollectionSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		A74AD27C254750C0006C6FAE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A74AD28425475934006C6FAE /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
 		A74AD28525475934006C6FAE /* CharactersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersCollectionViewCell.xib; sourceTree = "<group>"; };
+		A74AD297254B4120006C6FAE /* CollectionSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 				04CC03EE251A1F6100431213 /* Search.storyboard */,
 				A74AD27C254750C0006C6FAE /* Model.swift */,
 				A74AD27225464748006C6FAE /* Search.swift */,
+				A74AD297254B4120006C6FAE /* CollectionSearch.swift */,
 				A74AD28425475934006C6FAE /* CharactersCollectionViewCell.swift */,
 				A74AD28525475934006C6FAE /* CharactersCollectionViewCell.xib */,
 			);
@@ -616,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D906A82520E1E6006D28C7 /* HeaderTableViewCell.swift in Sources */,
+				A74AD298254B4120006C6FAE /* CollectionSearch.swift in Sources */,
 				04CC03BB251981DD00431213 /* BaseViewController.swift in Sources */,
 				04125797252919470053631B /* ComicsDetailVC.swift in Sources */,
 				04CC03862519719400431213 /* LoginVC.swift in Sources */,
