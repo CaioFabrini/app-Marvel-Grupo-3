@@ -52,13 +52,27 @@ class ForgotPasswordVC: BaseViewController{
     
     
     @IBAction func tappedUpdateButton(_ sender: UIButton) {
-        print("tappedUpdateButton")
+        
     }
     
     @IBAction func showLogin(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
 
-    }
+    func validCPF(textField: String) -> Bool {
+        
+        return textField.isCPF
+       
+        }
     
-
+    func validPassword(passwordTextField: String,confirmPasswordTextField: String ) -> Bool {
+        
+        if passwordTextField.count >= 6 && confirmPasswordTextField.count >= 6{
+            return true
+        } else if passwordTextField == confirmPasswordTextField {
+            return true
+        }else{
+          return false
+        }
+    }
+}
