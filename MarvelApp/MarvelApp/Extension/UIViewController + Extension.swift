@@ -2,7 +2,7 @@
 //  UIViewController + Extension.swift
 //  MarvelApp
 //
-//  Created by Guilherme Martins  on 26/10/20.
+//  Created by Guilherme Martins and Amanda Nolasco  on 26/10/20.
 //
 
 import Foundation
