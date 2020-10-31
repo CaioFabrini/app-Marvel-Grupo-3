@@ -21,7 +21,11 @@ class ConfigProfileVC: BaseViewController {
         
     }
     
-    @IBAction func AccountSettingButton(_ sender: UIButton) {
+    @IBAction func logoutButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Login" , sender: nil)
+        
+    }
+    @IBAction func accountSettingButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "AccountSettingsSegue" , sender: nil)
         
     }
