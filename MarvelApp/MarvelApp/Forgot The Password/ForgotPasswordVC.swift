@@ -53,6 +53,15 @@ class ForgotPasswordVC: BaseViewController{
     
     @IBAction func tappedUpdateButton(_ sender: UIButton) {
         
+        let alert = UIAlertController(title: "Erro", message: "Dados incorretos", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        if !validCPF(textField: cpfTextField.text!) || !validPassword(passwordTextField: passwordTextField.text!, confirmPasswordTextField: confirmPasswordTextField.text!){
+            alert.addAction(okButton)
+            present(alert, animated: true, completion: nil)
+            
+        }
+        
     }
     
     @IBAction func showLogin(_ sender: UIButton) {
@@ -60,19 +69,13 @@ class ForgotPasswordVC: BaseViewController{
     }
 
     func validCPF(textField: String) -> Bool {
-        
         return textField.isCPF
        
         }
     
     func validPassword(passwordTextField: String,confirmPasswordTextField: String ) -> Bool {
         
-        if passwordTextField.count >= 6 && confirmPasswordTextField.count >= 6{
-            return true
-        } else if passwordTextField == confirmPasswordTextField {
-            return true
-        }else{
-          return false
-        }
+        return (passwordTextField.count >= 6 && confirmPasswordTextField.count >= 6) && (passwordTextField == confirmPasswordTextField)
     }
+
 }
