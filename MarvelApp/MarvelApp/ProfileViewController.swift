@@ -21,7 +21,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var scCharactersComics: UISegmentedControl!
     
-    var aa = ""
+    
     private var collectionViewFlowLayout: UICollectionViewFlowLayout!
     var segmentedItems:Int = 0
     var items:Int = 0
@@ -105,15 +105,37 @@ class ProfileViewController: UIViewController {
         }
             
     }
+    func collectionViewItemSize2(){
+        
+        if collectionViewFlowLayout == nil{
     
+        let itemsPerRow: CGFloat = 2
+        let lineSpacing: CGFloat = 5
+        let internItemSpacing: CGFloat = 5
+        let width = (profileCollectionView.frame.width - (itemsPerRow - 1) * internItemSpacing) / itemsPerRow
+        let height = width * 5
+        
+        collectionViewFlowLayout = UICollectionViewFlowLayout()
+        collectionViewFlowLayout.itemSize = CGSize(width: width, height: height)
+        collectionViewFlowLayout.sectionInset = UIEdgeInsets.zero
+        collectionViewFlowLayout.scrollDirection = .vertical
+        collectionViewFlowLayout.minimumLineSpacing = lineSpacing
+        collectionViewFlowLayout.minimumInteritemSpacing = internItemSpacing
+        profileCollectionView.setCollectionViewLayout(collectionViewFlowLayout, animated: true)
+        }
+            
+    }
 
     @IBAction func changeCollectionView(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
             items = arrayCharactersItems.count
+            collectionViewItemSize()
+            
         } else {
             
             items = arrayComicsItems.count
+            collectionViewItemSize2()
         }
         
         segmentedItems = sender.selectedSegmentIndex
