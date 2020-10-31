@@ -12,48 +12,68 @@
         <!--Search-->
         <scene sceneID="4B8-m1-1JU">
             <objects>
-                <viewController storyboardIdentifier="SearchVC" id="6wp-SH-KDe" customClass="Search" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchVC" id="6wp-SH-KDe" customClass="Search" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1A8-DC-LIu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBi-pO-vof">
-                                <rect key="frame" x="32" y="221" width="350" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBi-pO-vof">
+                                <rect key="frame" x="32" y="170" width="350" height="279"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Character" image="Intersecao_3">
+                                <state key="normal" title="CARACTER" image="Intersecao_3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="CharacterButton:" destination="6wp-SH-KDe" eventType="touchUpInside" id="dnD-L6-O2c"/>
-                                    <action selector="characterButon:" destination="6wp-SH-KDe" eventType="touchUpInside" id="L6Z-Om-omA"/>
+                                    <action selector="CharacterButton:" destination="6wp-SH-KDe" eventType="touchUpInside" id="Fid-vr-ln6"/>
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="MCS-LV-soO">
-                                <rect key="frame" x="20" y="74" width="374" height="56"/>
+                                <rect key="frame" x="20" y="64" width="374" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9F-hb-1N3">
-                                <rect key="frame" x="20" y="507" width="374" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Commic" image="Intersecao_2"/>
                                 <connections>
-                                    <action selector="ComicButton:" destination="6wp-SH-KDe" eventType="touchUpInside" id="S9v-Up-lg4"/>
+                                    <outlet property="delegate" destination="6wp-SH-KDe" id="oqz-1X-4MV"/>
                                 </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9F-hb-1N3">
+                                <rect key="frame" x="32" y="484" width="350" height="279"/>
+                                <state key="normal" title="Commic" image="Intersecao_2"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Character" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hY-rR-gPV">
+                                <rect key="frame" x="30" y="281" width="354" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="COMIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpi-ri-Ybk">
+                                <rect key="frame" x="30" y="592" width="354" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LEb-nd-diw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LEb-nd-diw" firstAttribute="trailing" secondItem="MCS-LV-soO" secondAttribute="trailing" constant="20" id="RSR-Dj-egZ"/>
-                            <constraint firstItem="MCS-LV-soO" firstAttribute="top" secondItem="LEb-nd-diw" secondAttribute="top" constant="30" id="cDI-AT-nZY"/>
-                            <constraint firstItem="MCS-LV-soO" firstAttribute="leading" secondItem="LEb-nd-diw" secondAttribute="leading" constant="20" id="tkP-gD-lcM"/>
+                            <constraint firstItem="MCS-LV-soO" firstAttribute="leading" secondItem="LEb-nd-diw" secondAttribute="leading" constant="20" id="04x-Jc-BRp"/>
+                            <constraint firstItem="Y9F-hb-1N3" firstAttribute="top" secondItem="EBi-pO-vof" secondAttribute="bottom" constant="35" id="0fF-lE-RhF"/>
+                            <constraint firstItem="Y9F-hb-1N3" firstAttribute="leading" secondItem="LEb-nd-diw" secondAttribute="leading" constant="32" id="1pi-O6-Nbe"/>
+                            <constraint firstItem="LEb-nd-diw" firstAttribute="trailing" secondItem="qpi-ri-Ybk" secondAttribute="trailing" constant="30" id="3BM-zi-fKl"/>
+                            <constraint firstItem="LEb-nd-diw" firstAttribute="trailing" secondItem="EBi-pO-vof" secondAttribute="trailing" constant="32" id="46K-CH-IXO"/>
+                            <constraint firstItem="LEb-nd-diw" firstAttribute="trailing" secondItem="Y9F-hb-1N3" secondAttribute="trailing" constant="32" id="52f-lr-Dxn"/>
+                            <constraint firstItem="qpi-ri-Ybk" firstAttribute="centerX" secondItem="Y9F-hb-1N3" secondAttribute="centerX" id="AD4-bw-U3B"/>
+                            <constraint firstItem="LEb-nd-diw" firstAttribute="trailing" secondItem="MCS-LV-soO" secondAttribute="trailing" constant="20" id="Tsz-Is-Jpy"/>
+                            <constraint firstItem="EBi-pO-vof" firstAttribute="top" secondItem="MCS-LV-soO" secondAttribute="bottom" constant="50" id="ee1-6s-5EV"/>
+                            <constraint firstItem="EBi-pO-vof" firstAttribute="top" secondItem="MCS-LV-soO" secondAttribute="bottom" constant="50" id="jd8-AG-b9b"/>
+                            <constraint firstItem="EBi-pO-vof" firstAttribute="leading" secondItem="LEb-nd-diw" secondAttribute="leading" constant="32" id="mE0-my-bbC"/>
+                            <constraint firstItem="MCS-LV-soO" firstAttribute="top" secondItem="LEb-nd-diw" secondAttribute="top" constant="20" id="nwM-Vk-OT9"/>
+                            <constraint firstItem="LEb-nd-diw" firstAttribute="bottom" secondItem="Y9F-hb-1N3" secondAttribute="bottom" constant="50" id="wce-oH-imJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" id="SuD-24-5ax"/>
                     <connections>
-                        <outlet property="SearchBar" destination="MCS-LV-soO" id="2Zv-bv-Fb9"/>
-                        <segue destination="Zcu-Cu-5QD" kind="show" identifier="result" id="QJ6-Hm-YYy"/>
+                        <outlet property="searchBar" destination="MCS-LV-soO" id="Vm7-y6-iID"/>
+                        <segue destination="Zcu-Cu-5QD" kind="show" identifier="resultView" id="f8t-1d-SCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfy-xt-feb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,7 +83,7 @@
         <!--Collection Search-->
         <scene sceneID="prB-hH-FhD">
             <objects>
-                <viewController id="Zcu-Cu-5QD" customClass="CollectionSearch" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Teste" id="Zcu-Cu-5QD" customClass="CollectionSearch" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQL-UL-5Pe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +107,10 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zcu-Cu-5QD" id="420-jH-tod"/>
+                                    <outlet property="delegate" destination="Zcu-Cu-5QD" id="tY6-xG-M1Z"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="upM-rU-Md1"/>
@@ -100,8 +124,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="izf-M8-s7d"/>
                     <connections>
-                        <outlet property="CollectionSearch" destination="PXa-Dv-SMf" id="9qz-8I-Xah"/>
-                        <outlet property="CollectionViewSearch" destination="PXa-Dv-SMf" id="ddr-WV-5cs"/>
+                        <outlet property="collectionViewSearch" destination="PXa-Dv-SMf" id="fGz-0W-vqz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGh-dI-bc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
